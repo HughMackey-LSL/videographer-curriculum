@@ -72,6 +72,13 @@
 
       <p>That strange-looking image is intentional. The log file contains significantly more tonal information than a standard recording — detail in highlights that would have been clipped, detail in shadows that would have been crushed. In a color grading application, the colorist applies a transform (called a LUT, or Look-Up Table) that maps the log image back into a display color space, and the footage suddenly has vibrant colors, normal contrast, and rich detail in both highlights and shadows simultaneously. The flat recording is a preservation strategy — a way of saving data that would otherwise be discarded by the camera.</p>
 
+      <figure class="lesson-visual">
+        <img src="images/05-picture-profiles-log.svg" alt="Tone curve graph comparing Rec.709 and log plus a workflow from log capture through monitoring LUT to graded delivery.">
+        <figcaption><strong>Visual example:</strong> Log recording flattens the on-screen image to preserve more tonal range, then a LUT or grade maps that range back into a normal display look.
+          <span class="visual-credit">Original course illustration. References: <a href="https://helpguide.sony.net/di/pp/v1/en/contents/TP0000909108.html">Sony S-Log guide</a> and <a href="https://www.itu.int/rec/R-REC-BT.709/en">ITU-R BT.709 standard</a>.</span>
+        </figcaption>
+      </figure>
+
       <p>Common log formats by manufacturer include Sony's S-Log2 and S-Log3, Canon's C-Log and C-Log3, Panasonic's V-Log, and ARRI's Log-C. Each uses a slightly different curve and has a specific LUT (or set of LUTs) associated with it. They all accomplish the same basic goal — preserving dynamic range — but they are not interchangeable. Using the wrong LUT for a given log format will produce incorrect colors.</p>
 
       <table class="def-table">

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
+  <title id="title">Lens focal length and field of view comparison</title>
+  <desc id="desc">A comparison of wide, normal, and telephoto field of view, plus a portrait example showing close-wide distortion versus stepping back with a longer lens.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:#fff;stroke:#dbe3ef;stroke-width:2}.card{fill:#f8fafc;stroke:#dbe3ef;stroke-width:2}.titleText{font:700 28px Inter,Arial,sans-serif;fill:#0f172a}.label{font:700 18px Inter,Arial,sans-serif;fill:#0f172a}.small{font:600 14px Inter,Arial,sans-serif;fill:#475569}.micro{font:700 12px Inter,Arial,sans-serif;fill:#64748b}.wide{fill:#dcfce7;stroke:#16a34a;stroke-width:2}.normal{fill:#dbeafe;stroke:#2563eb;stroke-width:2}.tele{fill:#fff7ed;stroke:#d97706;stroke-width:2}.ray{stroke-width:3;fill:none}
+    </style>
+  </defs>
+  <rect class="bg" width="900" height="540"/>
+  <rect class="panel" x="34" y="34" width="832" height="472" rx="18"/>
+  <text x="64" y="82" class="titleText">Lenses and Focal Length</text>
+
+  <g transform="translate(70 142)">
+    <rect class="card" x="0" y="0" width="760" height="168" rx="14"/>
+    <text x="24" y="36" class="label">Field of view</text>
+    <rect x="42" y="72" width="54" height="38" rx="6" fill="#0f172a"/>
+    <circle cx="98" cy="91" r="19" fill="#334155"/>
+    <path class="ray" d="M116 91 L675 24" stroke="#16a34a"/>
+    <path class="ray" d="M116 91 L675 158" stroke="#16a34a"/>
+    <path class="ray" d="M116 91 L675 54" stroke="#2563eb"/>
+    <path class="ray" d="M116 91 L675 128" stroke="#2563eb"/>
+    <path class="ray" d="M116 91 L675 79" stroke="#d97706"/>
+    <path class="ray" d="M116 91 L675 103" stroke="#d97706"/>
+    <rect class="wide" x="624" y="22" width="86" height="138" rx="8"/>
+    <rect class="normal" x="642" y="54" width="50" height="74" rx="8"/>
+    <rect class="tele" x="657" y="79" width="20" height="24" rx="4"/>
+    <text x="156" y="124" class="small">wide: more environment</text>
+    <text x="416" y="66" class="small">normal: natural</text>
+    <text x="416" y="130" class="small">telephoto: narrow</text>
+  </g>
+
+  <g transform="translate(70 345)">
+    <rect x="0" y="0" width="354" height="112" rx="14" fill="#fff7ed" stroke="#d97706" stroke-width="2"/>
+    <text x="20" y="32" class="label">Close + wide</text>
+    <circle cx="88" cy="72" r="32" fill="#f8c9aa"/>
+    <ellipse cx="88" cy="76" rx="15" ry="22" fill="#e8793e"/>
+    <circle cx="72" cy="65" r="4" fill="#0f172a"/><circle cx="104" cy="65" r="4" fill="#0f172a"/>
+    <text x="142" y="68" class="small">distorted face</text>
+    <text x="142" y="90" class="micro">camera too close</text>
+  </g>
+
+  <g transform="translate(476 345)">
+    <rect x="0" y="0" width="354" height="112" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="20" y="32" class="label">Step back + long</text>
+    <circle cx="88" cy="72" r="32" fill="#f8c9aa"/>
+    <ellipse cx="88" cy="76" rx="9" ry="16" fill="#e8793e"/>
+    <circle cx="72" cy="65" r="4" fill="#0f172a"/><circle cx="104" cy="65" r="4" fill="#0f172a"/>
+    <text x="142" y="68" class="small">natural face</text>
+    <text x="142" y="90" class="micro">70-100mm equivalent</text>
+  </g>
+</svg>

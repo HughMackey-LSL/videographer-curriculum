@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Picture profiles and log workflow</title>
+  <desc id="desc">A graph comparing Rec.709 and log curves beside a compact log capture, LUT preview, and delivery workflow.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:#fff;stroke:#dbe3ef;stroke-width:2}.card{fill:#f8fafc;stroke:#dbe3ef;stroke-width:2}.titleText{font:700 28px Inter,Arial,sans-serif;fill:#0f172a}.label{font:700 18px Inter,Arial,sans-serif;fill:#0f172a}.small{font:600 14px Inter,Arial,sans-serif;fill:#475569}.micro{font:700 12px Inter,Arial,sans-serif;fill:#64748b}.axis{stroke:#94a3b8;stroke-width:2}.rec{stroke:#dc2626;stroke-width:5;fill:none}.log{stroke:#2563eb;stroke-width:5;fill:none}.line{stroke:#64748b;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#64748b"/></marker>
+    <linearGradient id="flat" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cbd5e1"/><stop offset="1" stop-color="#e2e8f0"/></linearGradient>
+    <linearGradient id="graded" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f172a"/><stop offset=".52" stop-color="#2563eb"/><stop offset="1" stop-color="#f97316"/></linearGradient>
+  </defs>
+  <rect class="bg" width="900" height="520"/>
+  <rect class="panel" x="34" y="34" width="832" height="452" rx="18"/>
+  <text x="64" y="82" class="titleText">Picture Profiles and Log</text>
+
+  <g transform="translate(62 138)">
+    <rect class="card" x="0" y="0" width="360" height="292" rx="14"/>
+    <text x="22" y="34" class="label">Tone curve</text>
+    <line class="axis" x1="62" y1="224" x2="316" y2="224"/>
+    <line class="axis" x1="62" y1="224" x2="62" y2="58"/>
+    <text x="189" y="254" text-anchor="middle" class="micro">scene brightness</text>
+    <text x="23" y="145" transform="rotate(-90 23 145)" class="micro">recorded signal</text>
+    <path class="rec" d="M62 224 C106 202 138 161 164 103 C181 72 213 59 316 57"/>
+    <path class="log" d="M62 224 C116 196 174 168 234 128 C276 100 301 83 316 70"/>
+    <line x1="62" y1="80" x2="316" y2="80" stroke="#fca5a5" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="202" y="104" class="micro" fill="#dc2626">Rec.709 clips</text>
+    <text x="198" y="145" class="micro" fill="#2563eb">Log compresses</text>
+    <circle cx="272" cy="80" r="5" fill="#dc2626"/>
+    <circle cx="272" cy="104" r="5" fill="#2563eb"/>
+  </g>
+
+  <g transform="translate(462 138)">
+    <rect class="card" x="0" y="0" width="376" height="292" rx="14"/>
+    <text x="22" y="34" class="label">Log workflow</text>
+    <rect x="28" y="70" width="82" height="70" rx="10" fill="url(#flat)" stroke="#94a3b8" stroke-width="2"/>
+    <path class="line" d="M122 105 H164"/>
+    <rect x="178" y="70" width="82" height="70" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="219" y="111" text-anchor="middle" class="label">LUT</text>
+    <path class="line" d="M272 105 H314"/>
+    <rect x="328" y="70" width="32" height="70" rx="10" fill="url(#graded)" stroke="#0f172a" stroke-width="2"/>
+
+    <text x="69" y="168" text-anchor="middle" class="small">capture</text>
+    <text x="219" y="168" text-anchor="middle" class="small">preview</text>
+    <text x="344" y="168" text-anchor="middle" class="small">grade</text>
+
+    <rect x="28" y="212" width="320" height="52" rx="12" fill="#fff7ed" stroke="#d97706" stroke-width="2"/>
+    <text x="48" y="235" class="label">Use log with:</text>
+    <text x="48" y="256" class="small">10-bit, LUT, and color grade</text>
+  </g>
+</svg>

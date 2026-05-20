@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
+  <title id="title">Exposure and focus monitoring tools</title>
+  <desc id="desc">Four camera monitoring panels showing a histogram, zebras, waveform, and false color exposure overlay.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:#fff;stroke:#dbe3ef;stroke-width:2}.card{fill:#f8fafc;stroke:#dbe3ef;stroke-width:2}.screen{fill:#0f172a}.titleText{font:700 28px Inter,Arial,sans-serif;fill:#0f172a}.label{font:700 18px Inter,Arial,sans-serif;fill:#0f172a}.micro{font:700 12px Inter,Arial,sans-serif;fill:#64748b}.grid{stroke:#334155;stroke-width:1}.trace{fill:none;stroke:#38bdf8;stroke-width:4}.zebra{stroke:#fff;stroke-width:3}
+    </style>
+    <linearGradient id="falseColor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d4ed8"/>
+      <stop offset=".35" stop-color="#22c55e"/>
+      <stop offset=".58" stop-color="#ec4899"/>
+      <stop offset=".76" stop-color="#facc15"/>
+      <stop offset="1" stop-color="#dc2626"/>
+    </linearGradient>
+  </defs>
+  <rect class="bg" width="900" height="540"/>
+  <rect class="panel" x="34" y="34" width="832" height="472" rx="18"/>
+  <text x="64" y="82" class="titleText">Monitoring Exposure and Focus</text>
+
+  <g transform="translate(62 142)">
+    <rect class="card" x="0" y="0" width="370" height="148" rx="14"/>
+    <text x="20" y="34" class="label">Histogram</text>
+    <rect x="20" y="54" width="330" height="70" rx="6" class="screen"/>
+    <line class="grid" x1="52" y1="54" x2="52" y2="124"/><line class="grid" x1="318" y1="54" x2="318" y2="124"/>
+    <path d="M28 118 C58 116 73 98 92 92 C123 82 132 105 158 96 C188 85 204 69 230 76 C262 84 268 110 301 114 C320 116 335 103 348 88 L348 124 L28 124Z" fill="#38bdf8" opacity=".72"/>
+    <text x="20" y="138" class="micro">distribution: shadows to highlights</text>
+  </g>
+
+  <g transform="translate(468 142)">
+    <rect class="card" x="0" y="0" width="370" height="148" rx="14"/>
+    <text x="20" y="34" class="label">Zebras</text>
+    <rect x="20" y="54" width="330" height="70" rx="6" fill="#475569"/>
+    <circle cx="190" cy="89" r="40" fill="#f8c9aa"/>
+    <g opacity=".9">
+      <line class="zebra" x1="202" y1="55" x2="248" y2="101"/>
+      <line class="zebra" x1="218" y1="55" x2="264" y2="101"/>
+      <line class="zebra" x1="234" y1="55" x2="280" y2="101"/>
+      <line class="zebra" x1="250" y1="55" x2="296" y2="101"/>
+    </g>
+    <text x="20" y="138" class="micro">threshold warning stripes</text>
+  </g>
+
+  <g transform="translate(62 324)">
+    <rect class="card" x="0" y="0" width="370" height="148" rx="14"/>
+    <text x="20" y="34" class="label">Waveform</text>
+    <rect x="20" y="54" width="330" height="70" rx="6" class="screen"/>
+    <g class="grid">
+      <line x1="20" y1="72" x2="350" y2="72"/><line x1="20" y1="96" x2="350" y2="96"/><line x1="20" y1="120" x2="350" y2="120"/>
+    </g>
+    <path class="trace" d="M28 116 C55 92 84 92 105 101 C134 113 153 88 186 78 C226 64 239 82 264 89 C297 99 316 76 344 68"/>
+    <text x="20" y="138" class="micro">luminance across the frame</text>
+  </g>
+
+  <g transform="translate(468 324)">
+    <rect class="card" x="0" y="0" width="370" height="148" rx="14"/>
+    <text x="20" y="34" class="label">False color</text>
+    <rect x="20" y="54" width="330" height="70" rx="6" fill="url(#falseColor)"/>
+    <circle cx="184" cy="89" r="34" fill="#ec4899" opacity=".9"/>
+    <rect x="36" y="109" width="52" height="10" fill="#1d4ed8"/>
+    <rect x="92" y="109" width="52" height="10" fill="#22c55e"/>
+    <rect x="148" y="109" width="52" height="10" fill="#ec4899"/>
+    <rect x="204" y="109" width="52" height="10" fill="#facc15"/>
+    <rect x="260" y="109" width="52" height="10" fill="#dc2626"/>
+    <text x="20" y="138" class="micro">color map of exposure zones</text>
+  </g>
+</svg>

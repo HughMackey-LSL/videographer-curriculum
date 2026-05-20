@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Frame rates and 180 degree shutter guide</title>
+  <desc id="desc">A guide showing the 180 degree shutter relationship between frame rate and shutter speed.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:#fff;stroke:#dbe3ef;stroke-width:2}.titleText{font:700 28px Inter,Arial,sans-serif;fill:#0f172a}.label{font:700 18px Inter,Arial,sans-serif;fill:#0f172a}.small{font:600 14px Inter,Arial,sans-serif;fill:#475569}.micro{font:700 12px Inter,Arial,sans-serif;fill:#64748b}.axis{stroke:#cbd5e1;stroke-width:2}.bar{fill:#dbeafe;stroke:#2563eb;stroke-width:2}.open{fill:#2563eb}.warn{fill:#fff7ed;stroke:#d97706;stroke-width:2}
+    </style>
+  </defs>
+  <rect class="bg" width="900" height="520"/>
+  <rect class="panel" x="34" y="34" width="832" height="452" rx="18"/>
+  <text x="64" y="82" class="titleText">Frame Rates and Shutter</text>
+
+  <g transform="translate(96 145)">
+    <circle cx="100" cy="96" r="72" fill="#e0f2fe" stroke="#0891b2" stroke-width="4"/>
+    <path d="M100 96 L100 24 A72 72 0 0 1 100 168 Z" fill="#0891b2"/>
+    <line x1="100" y1="96" x2="100" y2="24" stroke="#fff" stroke-width="3"/>
+    <line x1="100" y1="96" x2="100" y2="168" stroke="#fff" stroke-width="3"/>
+    <text x="100" y="210" text-anchor="middle" class="label">180 deg</text>
+    <text x="100" y="233" text-anchor="middle" class="small">half-frame exposure</text>
+  </g>
+
+  <g transform="translate(330 150)">
+    <line class="axis" x1="0" y1="0" x2="470" y2="0"/>
+    <text x="0" y="-16" class="micro">frame interval</text>
+
+    <g transform="translate(0 32)">
+      <text x="-16" y="24" text-anchor="end" class="label">24 fps</text>
+      <rect class="bar" x="0" y="0" width="360" height="34" rx="5"/>
+      <rect class="open" x="0" y="0" width="180" height="34" rx="5"/>
+      <text x="390" y="23" class="label">1/50</text>
+      <text x="90" y="23" text-anchor="middle" fill="#fff" font-family="Inter,Arial" font-weight="700" font-size="13">expose</text>
+    </g>
+
+    <g transform="translate(0 102)">
+      <text x="-16" y="24" text-anchor="end" class="label">30 fps</text>
+      <rect class="bar" x="0" y="0" width="288" height="34" rx="5"/>
+      <rect class="open" x="0" y="0" width="144" height="34" rx="5"/>
+      <text x="390" y="23" class="label">1/60</text>
+      <text x="72" y="23" text-anchor="middle" fill="#fff" font-family="Inter,Arial" font-weight="700" font-size="13">expose</text>
+    </g>
+
+    <g transform="translate(0 172)">
+      <text x="-16" y="24" text-anchor="end" class="label">60 fps</text>
+      <rect class="bar" x="0" y="0" width="144" height="34" rx="5"/>
+      <rect class="open" x="0" y="0" width="72" height="34" rx="5"/>
+      <text x="390" y="23" class="label">1/120</text>
+      <text x="36" y="23" text-anchor="middle" fill="#fff" font-family="Inter,Arial" font-weight="700" font-size="13">expose</text>
+    </g>
+  </g>
+
+  <rect class="warn" x="82" y="405" width="736" height="52" rx="12"/>
+  <text x="108" y="427" class="label">Too fast: strobing.</text>
+  <text x="108" y="449" class="label">Too slow: smeared motion.</text>
+</svg>

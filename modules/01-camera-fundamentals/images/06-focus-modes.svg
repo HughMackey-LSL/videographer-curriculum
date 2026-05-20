@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Focus mode and focus assist viewfinder</title>
+  <desc id="desc">A camera monitor view showing eye-detection autofocus, focus peaking highlights, a magnified eye inset, and a manual focus plane.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:#fff;stroke:#dbe3ef;stroke-width:2}.screen{fill:#0f172a;stroke:#334155;stroke-width:5}.card{fill:#f8fafc;stroke:#dbe3ef;stroke-width:2}.titleText{font:700 28px Inter,Arial,sans-serif;fill:#0f172a}.label{font:700 18px Inter,Arial,sans-serif;fill:#0f172a}.small{font:600 14px Inter,Arial,sans-serif;fill:#475569}.micro{font:700 12px Inter,Arial,sans-serif;fill:#64748b}.line{stroke:#64748b;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#64748b"/></marker>
+  </defs>
+  <rect class="bg" width="900" height="520"/>
+  <rect class="panel" x="34" y="34" width="832" height="452" rx="18"/>
+  <text x="64" y="82" class="titleText">Focus Modes</text>
+
+  <g transform="translate(78 138)">
+    <rect class="screen" x="0" y="0" width="502" height="304" rx="16"/>
+    <rect x="28" y="28" width="446" height="248" rx="10" fill="#1e293b"/>
+    <rect x="42" y="202" width="418" height="28" fill="#334155"/>
+    <circle cx="252" cy="111" r="52" fill="#f8c9aa"/>
+    <path d="M205 103 C213 50 292 47 302 104 C281 88 226 88 205 103Z" fill="#3f2b1f"/>
+    <path d="M213 160 C234 186 272 188 293 160 L309 230 H197 Z" fill="#94a3b8"/>
+    <circle cx="232" cy="114" r="6" fill="#0f172a"/>
+    <circle cx="272" cy="114" r="6" fill="#0f172a"/>
+    <path d="M236 145 C248 153 262 153 274 145" stroke="#7c2d12" stroke-width="3" fill="none"/>
+    <rect x="216" y="101" width="74" height="30" fill="none" stroke="#16a34a" stroke-width="4" rx="4"/>
+    <rect x="224" y="105" width="20" height="17" fill="none" stroke="#22c55e" stroke-width="2" rx="3"/>
+    <rect x="261" y="105" width="20" height="17" fill="none" stroke="#22c55e" stroke-width="2" rx="3"/>
+    <text x="50" y="55" fill="#22c55e" font-family="Inter,Arial" font-size="16" font-weight="700">AF-C EYE</text>
+    <g stroke="#facc15" stroke-width="3" stroke-linecap="round" opacity=".95">
+      <path d="M202 97 L216 90"/><path d="M292 97 L306 90"/><path d="M195 155 L182 169"/><path d="M309 155 L323 170"/>
+      <path d="M194 226 L210 213"/><path d="M310 226 L294 213"/><path d="M59 205 L82 200"/><path d="M414 205 L439 199"/>
+    </g>
+    <line x1="348" y1="40" x2="348" y2="260" stroke="#38bdf8" stroke-width="4" stroke-dasharray="8 8"/>
+    <text x="354" y="52" fill="#38bdf8" font-family="Inter,Arial" font-size="13" font-weight="700">focus plane</text>
+  </g>
+
+  <g transform="translate(610 142)">
+    <rect class="card" x="0" y="0" width="222" height="166" rx="14"/>
+    <text x="20" y="34" class="label">Magnify</text>
+    <circle cx="108" cy="91" r="44" fill="#f8c9aa" stroke="#94a3b8" stroke-width="2"/>
+    <ellipse cx="91" cy="89" rx="18" ry="11" fill="#fff"/>
+    <circle cx="91" cy="89" r="6" fill="#0f172a"/>
+    <ellipse cx="125" cy="89" rx="18" ry="11" fill="#fff"/>
+    <circle cx="125" cy="89" r="6" fill="#0f172a"/>
+    <rect x="70" y="71" width="76" height="38" fill="none" stroke="#16a34a" stroke-width="3" rx="5"/>
+    <text x="111" y="146" text-anchor="middle" class="small">check the eyes</text>
+  </g>
+
+  <path class="line" d="M585 240 C613 228 628 214 650 199"/>
+  <rect class="card" x="610" y="340" width="222" height="76" rx="14"/>
+  <text x="630" y="368" class="label">AF failure signs</text>
+  <text x="630" y="392" class="small">hunting, glare, low contrast</text>
+</svg>

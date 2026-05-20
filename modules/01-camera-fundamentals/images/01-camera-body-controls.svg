@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Camera body control map</title>
+  <desc id="desc">A simplified camera body with callouts for the record button, mode dial, media slots, battery, ports, and handheld support triangle.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:#fff;stroke:#dbe3ef;stroke-width:2}.body{fill:#162033;stroke:#0f172a;stroke-width:3}.lens{fill:#263449;stroke:#0f172a;stroke-width:3}.glass{fill:#8ecae6;stroke:#2563eb;stroke-width:3}.control{fill:#e2e8f0;stroke:#64748b;stroke-width:2}.tag{fill:#f8fafc;stroke:#cbd5e1;stroke-width:2}.red{fill:#dc2626}.blue{fill:#2563eb}.green{fill:#16a34a}.amber{fill:#d97706}.cyan{fill:#0891b2}.titleText{font:700 28px Inter,Arial,sans-serif;fill:#0f172a}.label{font:700 18px Inter,Arial,sans-serif;fill:#0f172a}.small{font:600 13px Inter,Arial,sans-serif;fill:#475569}.tiny{font:700 12px Inter,Arial,sans-serif;fill:#fff}.line{stroke:#475569;stroke-width:2;fill:none;marker-end:url(#arrow)}.support{fill:none;stroke:#16a34a;stroke-width:5;stroke-linecap:round}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="900" height="520"/>
+  <rect class="panel" x="34" y="34" width="832" height="452" rx="18"/>
+  <text x="64" y="82" class="titleText">Camera Body Orientation</text>
+
+  <g transform="translate(255 158)">
+    <rect class="body" x="0" y="55" width="390" height="230" rx="28"/>
+    <rect class="body" x="65" y="0" width="170" height="82" rx="18"/>
+    <rect class="lens" x="96" y="94" width="220" height="150" rx="75"/>
+    <circle class="glass" cx="206" cy="169" r="57"/>
+    <circle fill="#0f172a" cx="206" cy="169" r="28"/>
+    <circle fill="#c7ecff" cx="190" cy="151" r="10" opacity=".75"/>
+    <rect class="red" x="294" y="26" width="46" height="30" rx="15"/>
+    <text x="309" y="47" class="tiny">REC</text>
+    <circle class="control" cx="63" cy="42" r="28"/>
+    <path class="blue" d="M48 42a15 15 0 0 1 30 0z"/>
+    <rect class="control" x="326" y="93" width="35" height="92" rx="8"/>
+    <line x1="333" y1="115" x2="354" y2="115" stroke="#64748b" stroke-width="2"/>
+    <line x1="333" y1="139" x2="354" y2="139" stroke="#64748b" stroke-width="2"/>
+    <line x1="333" y1="163" x2="354" y2="163" stroke="#64748b" stroke-width="2"/>
+    <rect class="control" x="35" y="223" width="86" height="36" rx="7"/>
+    <rect class="cyan" x="21" y="119" width="24" height="94" rx="6"/>
+    <rect class="amber" x="376" y="108" width="28" height="112" rx="8"/>
+    <path class="support" d="M95 278 L205 322 L312 278"/>
+    <circle class="green" cx="95" cy="278" r="9"/>
+    <circle class="green" cx="205" cy="322" r="9"/>
+    <circle class="green" cx="312" cy="278" r="9"/>
+  </g>
+
+  <g>
+    <rect class="tag" x="612" y="112" width="190" height="54" rx="10"/>
+    <text x="632" y="136" class="label">Record</text>
+    <text x="632" y="154" class="small">confirm tally</text>
+    <path class="line" d="M612 138 C584 145 558 168 545 184"/>
+
+    <rect class="tag" x="82" y="118" width="160" height="54" rx="10"/>
+    <text x="102" y="142" class="label">Mode dial</text>
+    <text x="102" y="160" class="small">use Manual</text>
+    <path class="line" d="M242 146 C272 154 300 175 319 194"/>
+
+    <rect class="tag" x="680" y="230" width="150" height="54" rx="10"/>
+    <text x="700" y="254" class="label">Media</text>
+    <text x="700" y="272" class="small">dual slots</text>
+    <path class="line" d="M680 257 C643 260 616 280 587 300"/>
+
+    <rect class="tag" x="84" y="372" width="150" height="54" rx="10"/>
+    <text x="104" y="396" class="label">Battery</text>
+    <text x="104" y="414" class="small">quick swap</text>
+    <path class="line" d="M234 396 C274 397 313 394 344 388"/>
+
+    <rect class="tag" x="682" y="340" width="150" height="54" rx="10"/>
+    <text x="702" y="364" class="label">Ports</text>
+    <text x="702" y="382" class="small">video + audio</text>
+    <path class="line" d="M682 366 C648 355 629 344 616 329"/>
+
+    <rect class="tag" x="368" y="424" width="190" height="44" rx="10"/>
+    <text x="388" y="452" class="label">Support triangle</text>
+    <path class="line" d="M463 424 C466 402 466 386 461 365"/>
+  </g>
+</svg>
