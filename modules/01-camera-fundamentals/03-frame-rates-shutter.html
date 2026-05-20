@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frame Rates and Shutter | Videography Fundamentals</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../../index.html">Videography Fundamentals</a>
+      <div class="sidebar-course-title">Field Production Training</div>
+    </div>
+    <div class="sidebar-progress-bar-wrap">
+      <div class="sidebar-progress-label">Your Progress</div>
+      <div class="sidebar-progress-bar">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="sidebar-progress-count" id="sidebar-progress-count"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+  <div class="main-wrapper">
+    <header class="top-bar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+    </header>
+    <main class="content">
+
+      <div class="lesson-header">
+        <div class="module-tag">Module 1 · Lesson 3</div>
+        <h1>Frame Rates and Shutter</h1>
+        <div class="lesson-meta">
+          <span>~11 min read</span>
+          <span>5 objectives</span>
+        </div>
+      </div>
+
+      <div class="objectives-box">
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Identify common video frame rates and understand when each is used.</li>
+          <li>Explain the 180-degree shutter rule and apply it to any frame rate.</li>
+          <li>Describe what happens visually when the shutter rule is violated.</li>
+          <li>Understand how to shoot slow motion by selecting a higher frame rate.</li>
+          <li>Know the practical difference between 24fps and 30fps for institutional video.</li>
+        </ul>
+      </div>
+
+      <h2>What Frame Rate Really Means</h2>
+      <p>Video is a rapid sequence of still images — frames — displayed fast enough that the human eye perceives smooth motion. The frame rate tells you how many of those images are captured (and displayed) every second. Higher frame rates capture more images per second, which means motion is smoother and more detailed. Lower frame rates capture fewer images per second, and the motion takes on a particular quality that audiences associate with cinema and high-budget production.</p>
+
+      <p>Choosing a frame rate is not just a technical decision — it is an aesthetic one with real consequences for how the finished piece feels. Understanding the options is the first step to choosing intentionally rather than by accident.</p>
+
+      <h2>Common Video Frame Rates</h2>
+
+      <table class="def-table">
+        <thead><tr><th>Frame Rate</th><th>Common Use</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>23.976 fps</td><td>Cinema-style delivery, streaming</td><td>The "24fps" of digital video — slightly slower than true 24 for legacy sync reasons</td></tr>
+          <tr><td>24 fps</td><td>True cinematic frame rate</td><td>Used in film acquisition; technically distinct from 23.976</td></tr>
+          <tr><td>29.97 fps</td><td>Broadcast TV (NTSC countries)</td><td>The standard for North American television delivery</td></tr>
+          <tr><td>30 fps</td><td>Web video, corporate production</td><td>Slightly smoother than 24; common for interviews and events</td></tr>
+          <tr><td>59.94 fps</td><td>Slow motion for 29.97 timelines</td><td>Plays back at half speed in a 29.97 timeline</td></tr>
+          <tr><td>60 fps</td><td>Slow motion, sports, gaming</td><td>Plays back at half speed in a 30fps timeline</td></tr>
+        </tbody>
+      </table>
+
+      <h3>24fps: The Cinematic Standard</h3>
+      <p>Twenty-four frames per second (technically 23.976fps in digital video) is the frame rate most people instinctively associate with "film" or "cinematic" quality. It produces a characteristic motion cadence — a slight blur on fast movement — that viewers have been conditioned over a century of cinema to read as high-production-value content. For documentary, narrative, and most institutional video intended to feel polished, 24fps is the default choice.</p>
+
+      <h3>30fps: Smoother and Safer</h3>
+      <p>Thirty frames per second produces noticeably smoother motion than 24fps. It is common for broadcast news, corporate interviews, and web video where "cinematic" is less important than clarity and ease of production. Some operators prefer 30fps because it gives slightly more margin when shooting moving subjects — the extra frames mean less motion blur per frame, which can make focus errors slightly less obvious. For institutional use cases like training videos, conference recordings, or web content, 30fps is a perfectly appropriate and common choice.</p>
+
+      <h3>60fps: For Slow Motion</h3>
+      <p>Sixty frames per second captures so many images per second that when you play the footage back at 24 or 30fps, the motion appears slowed down. A 60fps clip played back in a 24fps timeline runs at 40% of real speed — a dramatic slow-motion effect without any software interpolation. This is useful for capturing detail in fast-moving subjects: a speaker's expressions, hands gesturing, action sequences, or product demonstrations. Shoot at 60fps whenever you think you might want slow-motion options in the edit.</p>
+
+      <div class="callout callout-note">
+        <div class="callout-title">Note</div>
+        <p>When you shoot at 60fps for slow motion, you are typically not recording audio you intend to use — the pitch and timing of audio will be wrong when played back at reduced speed. Plan to cover slow-motion clips with music or narration in the edit.</p>
+      </div>
+
+      <h2>The 180-Degree Shutter Rule</h2>
+      <p>In the days of film cameras, the shutter was a rotating disc with a half-circle cutout — 180 degrees of the rotation exposed the film, 180 degrees blocked it while the film advanced to the next frame. This mechanical reality created the motion blur that audiences saw in every film ever made, and it became the visual standard for what "natural" motion looks like on screen.</p>
+
+      <p>Digital cameras do not have rotating shutters, but we still honor the same ratio because it produces the same natural motion blur. The rule is simple: <strong>set your shutter speed to double your frame rate</strong>. If shooting 24fps, use 1/48 second — most cameras round this to 1/50. If shooting 30fps, use 1/60. If shooting 60fps, use 1/120.</p>
+
+      <table class="def-table">
+        <thead><tr><th>Frame Rate</th><th>Correct Shutter Speed</th></tr></thead>
+        <tbody>
+          <tr><td>24fps (23.976)</td><td>1/50 sec</td></tr>
+          <tr><td>30fps (29.97)</td><td>1/60 sec</td></tr>
+          <tr><td>60fps (59.94)</td><td>1/120 sec</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Why the Rule Exists</h3>
+      <p>At the correct shutter speed, fast-moving objects in the frame — a hand gesture, walking legs, a passing car — have a small amount of blur on their edges. This blur, imperceptible as an individual effect but cumulative across hundreds of frames, is what the human visual system interprets as smooth, natural motion. It fills in the gaps between frames in a way that feels organic.</p>
+
+      <h3>What Happens When You Break the Rule</h3>
+      <p>If you use a shutter speed much faster than the rule — say 1/500 while shooting 24fps — each frame captures a razor-sharp instant of time with no blur at all. When these frames play back in sequence, the motion appears <strong>strobing</strong> or "stuttery," like an old silent film. It is jarring and looks amateurish unless used intentionally for creative effect. If you use a shutter speed much slower than the rule — 1/25 while shooting 24fps — each frame blurs so much that the image smears during any movement. This creates a muddy, nauseous look.</p>
+
+      <div class="callout callout-warning">
+        <div class="callout-title">Common Mistake</div>
+        <p>One of the most common beginner errors is leaving the shutter speed on a daylight photography setting (1/1000 or higher) when switching to video mode. The resulting strobing effect is immediately obvious in the footage and cannot be corrected in post-production. Always set the shutter before you roll.</p>
+      </div>
+
+      <h2>When the Shutter Rule Creates Problems</h2>
+      <p>Following the shutter rule means you cannot use shutter speed to control exposure the way a photographer does. At 1/50 or 1/60, you are letting in a fixed amount of light per frame regardless of how bright or dark the scene is. In bright outdoor conditions, this can cause severe overexposure — you have opened the shutter wide enough, and aperture and ISO at their minimum values still produce too much light.</p>
+
+      <p>The professional solution is a <strong>neutral density (ND) filter</strong> — a piece of optical glass that reduces the amount of light entering the lens without affecting color or depth of field. Variable ND filters allow you to dial in precisely how much light reduction you need. On any outdoor shoot in daylight, you will almost certainly need an ND filter to maintain the correct shutter speed and achieve the exposure you want. Many professional video cameras have built-in ND filters that can be engaged with a switch or dial.</p>
+
+      <h2>PAL vs. NTSC: A Brief History</h2>
+      <p>You will notice that most frame rates come in pairs that differ slightly: 24 and 23.976, 30 and 29.97, 60 and 59.94. The fractional rates (23.976, 29.97, 59.94) are the American NTSC standard, tied historically to the 60Hz electrical frequency used in North American power grids and the engineering requirements of early color television. PAL countries (Europe, Australia, much of Africa and Asia) used 25fps and 50fps, tied to their 50Hz grid. For modern digital production, these distinctions matter primarily when you are delivering to broadcast specifications. For most web and organizational video, the difference between 24 and 23.976 is invisible and irrelevant — just be consistent throughout a project.</p>
+
+      <div class="callout callout-tip">
+        <div class="callout-title">Tip</div>
+        <p>Set your camera to record in the same frame rate family as your delivery format and stick to it. Mixing 23.976 and 29.97 footage within a single project creates frame rate conversion issues in the edit that consume time and sometimes reduce quality. Decide once at the start of the project and configure every camera consistently.</p>
+      </div>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">You are shooting a training video at 30fps. According to the 180-degree shutter rule, what shutter speed should you set?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">1/30 sec</button>
+          <button class="kc-option" data-correct="true">1/60 sec</button>
+          <button class="kc-option" data-correct="false">1/120 sec</button>
+          <button class="kc-option" data-correct="false">1/500 sec</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">You want to capture footage that can be played back in slow motion in a 24fps timeline. What frame rate should you record at?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">24fps, because it matches the delivery frame rate.</button>
+          <button class="kc-option" data-correct="false">30fps, because it is higher than 24fps.</button>
+          <button class="kc-option" data-correct="true">60fps, because when played back in a 24fps timeline it runs at 40% of real speed, creating genuine slow motion.</button>
+          <button class="kc-option" data-correct="false">12fps, because a lower frame rate stretches the footage over more time.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="key-takeaways">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>Frame rate is both a technical and aesthetic choice — 24fps reads as cinematic, 30fps reads as broadcast or corporate, 60fps is primarily used for slow-motion capture.</li>
+          <li>The 180-degree shutter rule: always set shutter speed to double the frame rate. 24fps = 1/50, 30fps = 1/60, 60fps = 1/120.</li>
+          <li>Shutter speed that is too fast creates strobing motion; too slow creates smearing blur. Both look wrong and cannot be fixed in post.</li>
+          <li>In bright outdoor conditions, following the shutter rule will overexpose — use ND filters to control light without changing shutter speed.</li>
+          <li>Shoot in the frame rate your project will be delivered in, and be consistent across all cameras on the same project.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-nav" id="lesson-nav"></div>
+    </main>
+  </div>
+</div>
+<script src="../../js/course.js"></script>
+</body>
+</html>

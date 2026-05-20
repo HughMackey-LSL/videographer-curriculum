@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 1 Quiz | Videography Fundamentals</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../../index.html">Videography Fundamentals</a>
+      <div class="sidebar-course-title">Field Production Training</div>
+    </div>
+    <div class="sidebar-progress-bar-wrap">
+      <div class="sidebar-progress-label">Your Progress</div>
+      <div class="sidebar-progress-bar">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="sidebar-progress-count" id="sidebar-progress-count"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+  <div class="main-wrapper">
+    <header class="top-bar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+    </header>
+    <main class="content">
+
+      <div class="lesson-header">
+        <div class="module-tag">Module 1</div>
+        <h1>Camera Fundamentals Quiz</h1>
+        <div class="lesson-meta"><span>10 questions</span><span>Pass: 70%</span></div>
+      </div>
+      <p>Answer all 10 questions below. When you have answered every question, the Submit button becomes active. You can retry as many times as you like.</p>
+
+      <div id="module-quiz">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:0%"></div></div>
+        <div class="quiz-progress-label">0 of 10 answered</div>
+
+        <!-- Q1 -->
+        <div class="quiz-question" data-correct="1">
+          <div class="quiz-q-num">Question 1</div>
+          <p class="quiz-prompt">You are shooting a training video at 24fps. According to the 180-degree shutter rule, what shutter speed should you use?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">1/24 sec</button>
+            <button class="quiz-option">1/50 sec</button>
+            <button class="quiz-option">1/120 sec</button>
+            <button class="quiz-option">1/500 sec</button>
+          </div>
+          <div class="quiz-explanation">The 180-degree shutter rule states that shutter speed should be double the frame rate. At 24fps, that means 1/48 — the closest available setting on most cameras is 1/50. This produces the natural motion blur that makes footage look cinematic rather than strobing or smeared.</div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="quiz-question" data-correct="2">
+          <div class="quiz-q-num">Question 2</div>
+          <p class="quiz-prompt">You raise the ISO from 400 to 3200. What is the primary side effect of this change?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">The depth of field becomes shallower, blurring the background more.</button>
+            <button class="quiz-option">The shutter speed must be increased to compensate for the extra light.</button>
+            <button class="quiz-option">Visible noise increases — random specks of color and brightness appear throughout the image, especially in shadows.</button>
+            <button class="quiz-option">The frame rate is automatically reduced to handle the increased sensor sensitivity.</button>
+          </div>
+          <div class="quiz-explanation">ISO amplifies the electrical signal from the sensor to make the image brighter, but amplification always amplifies imperfections along with the signal. This produces random noise — grain-like specks of color and brightness — particularly visible in darker areas of the image. Higher ISO = more noise.</div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="quiz-question" data-correct="0">
+          <div class="quiz-q-num">Question 3</div>
+          <p class="quiz-prompt">Which aperture setting produces the shallowest depth of field and would make the background most blurred?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">f/1.8</button>
+            <button class="quiz-option">f/4</button>
+            <button class="quiz-option">f/8</button>
+            <button class="quiz-option">f/16</button>
+          </div>
+          <div class="quiz-explanation">Aperture f-stop numbers are counterintuitive: a lower number means a wider opening, which lets in more light and produces shallower depth of field. f/1.8 is the widest (most open) aperture of the options listed, producing the least depth of field and the most background blur.</div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="quiz-question" data-correct="3">
+          <div class="quiz-q-num">Question 4</div>
+          <p class="quiz-prompt">When is it most appropriate to shoot log (e.g., S-Log, C-Log) rather than a standard Rec.709 picture profile?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">When you want the footage to look great straight out of camera with no grading required.</button>
+            <button class="quiz-option">When you are shooting quickly and cannot spend time on technical setup.</button>
+            <button class="quiz-option">When you are shooting with a beginner operator who does not yet know how to color grade.</button>
+            <button class="quiz-option">When you have a full color grading workflow, are recording 10-bit, and have a monitoring LUT configured so you can judge exposure correctly on set.</button>
+          </div>
+          <div class="quiz-explanation">Log gamma is a tool for post-production workflows, not a shortcut. It only makes sense when you have 10-bit recording to support the color data, a monitoring LUT so you can evaluate exposure accurately on set, and a color grading step in post where the flat footage will be transformed. Without all three, a well-configured standard profile produces a better result.</div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="quiz-question" data-correct="2">
+          <div class="quiz-q-num">Question 5</div>
+          <p class="quiz-prompt">What is the key difference between continuous autofocus (AF-C) and manual focus for video production?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">AF-C is only available on high-end professional cameras; manual focus works on all cameras.</button>
+            <button class="quiz-option">AF-C always produces sharper results than manual focus because it uses the camera's sensor data directly.</button>
+            <button class="quiz-option">AF-C continuously adjusts focus to track the subject, which is practical for a solo operator but can fail in low contrast, low light, or with unpredictable subjects — whereas manual focus gives complete control but requires skill and attention.</button>
+            <button class="quiz-option">Manual focus is always preferred in professional work because autofocus is considered unreliable.</button>
+          </div>
+          <div class="quiz-explanation">Modern AF-C with face/eye detection is highly capable and genuinely useful for solo operators, but it has specific failure modes: low contrast scenes, low light, multiple subjects, extreme shallow depth of field. Manual focus requires skill and practice but gives you total control. Professional operators know both and choose based on the situation.</div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="quiz-question" data-correct="1">
+          <div class="quiz-q-num">Question 6</div>
+          <p class="quiz-prompt">Zebras are set to 95 IRE on your camera and stripes appear on a white wall in the background of your interview shot. What should you do?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">Nothing — zebras at 95 IRE on a white wall are expected and acceptable.</button>
+            <button class="quiz-option">Reduce exposure (narrow aperture, add ND, or lower ISO) to bring the wall below the clipping threshold, or reframe to exclude it, or add a light to make the subject brighter relative to the background.</button>
+            <button class="quiz-option">Increase the zebra threshold to 100 IRE so the stripes no longer appear.</button>
+            <button class="quiz-option">Switch to manual focus so the background blurs and the zebra stripes become less visible.</button>
+          </div>
+          <div class="quiz-explanation">Zebras at 95 IRE warn you that those areas are very close to clipping — bright white with potential detail loss. The correct response is to reduce overall exposure, or address the lighting so the background is not so much brighter than the subject. Raising the threshold just hides the warning without fixing the problem. Blurring the background does not affect its exposure.</div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="quiz-question" data-correct="2">
+          <div class="quiz-q-num">Question 7</div>
+          <p class="quiz-prompt">You want to create slow-motion footage that will play back at 24fps in your editing timeline. What frame rate should you record at?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">24fps — to match the delivery timeline exactly.</button>
+            <button class="quiz-option">30fps — because it is higher than 24fps and will create slow motion.</button>
+            <button class="quiz-option">60fps — because when played back in a 24fps timeline it runs at 40% of real speed, creating genuine slow motion without software interpolation.</button>
+            <button class="quiz-option">12fps — because a lower frame rate stretches motion across the delivery timeline.</button>
+          </div>
+          <div class="quiz-explanation">Slow motion is achieved by recording more frames per second than the delivery timeline requires. At 60fps played back in a 24fps timeline, the camera captured 60 frames of action in one second but the timeline displays only 24 of them per second — so one second of action takes 2.5 seconds to play back. This is true slow motion without software interpolation.</div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="quiz-question" data-correct="0">
+          <div class="quiz-q-num">Question 8</div>
+          <p class="quiz-prompt">You are shooting an indoor interview under tungsten lights. The correct Kelvin value to set for white balance is approximately:</p>
+          <div class="quiz-options">
+            <button class="quiz-option">3200K</button>
+            <button class="quiz-option">5600K</button>
+            <button class="quiz-option">7500K</button>
+            <button class="quiz-option">10000K</button>
+          </div>
+          <div class="quiz-explanation">Tungsten and incandescent light sources produce light at approximately 2800–3200 Kelvin — the warm orange light of a traditional light bulb or film lighting instrument. Setting white balance to 3200K tells the camera to treat that warm orange light as neutral white, producing correctly balanced colors. 5600K is daylight; 7500K is shade; 10000K is an extreme blue sky.</div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="quiz-question" data-correct="1">
+          <div class="quiz-q-num">Question 9</div>
+          <p class="quiz-prompt">For a corporate interview shoot, your lens kit consists of a 24–70mm f/2.8 zoom and an 85mm f/1.8 prime. At what focal length should you frame a close single-shot interview on a full-frame camera?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">24mm — wide angle lets you capture more of the environment to give context.</button>
+            <button class="quiz-option">70–85mm — this range produces natural facial proportions with no perspective distortion and a flattering background separation.</button>
+            <button class="quiz-option">Any focal length works equally well as long as the subject fills the frame.</button>
+            <button class="quiz-option">24mm, but position the camera very close to the subject so the face fills the frame.</button>
+          </div>
+          <div class="quiz-explanation">The 50–100mm range (full-frame equivalent) is the standard for interview work because it produces natural perspective — the face looks proportional, with no exaggerated nose from a wide lens at close range. The 70–85mm range with a subject at conversational distance creates a slightly compressed, flattering look. Wide lenses close to faces cause perspective distortion that is visually unflattering even if viewers cannot identify why.</div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="quiz-question" data-correct="3">
+          <div class="quiz-q-num">Question 10</div>
+          <p class="quiz-prompt">Your histogram shows most pixel values compressed toward the left side of the graph, with very little data on the right. The image appears very dark on the monitor. What is the correct response?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">This histogram is ideal — protecting highlights is the most important exposure principle.</button>
+            <button class="quiz-option">Raise ISO dramatically to push all pixel values to the right edge of the histogram.</button>
+            <button class="quiz-option">Accept the underexposure and fix it in post-production by lifting shadows, which is always clean and noise-free.</button>
+            <button class="quiz-option">Increase exposure carefully — open the aperture, add light, or raise ISO — until the histogram distribution centers in the middle of the graph without pushing the right edge to clipping.</button>
+          </div>
+          <div class="quiz-explanation">A histogram crowded to the left indicates significant underexposure — the image is too dark. While slight underexposure can be lifted in grading, severe underexposure produces noisy footage and crushed shadows with no detail. The correct response is to increase exposure until the distribution is centered, while monitoring the right edge to avoid clipping highlights. Raising ISO to the maximum overcorrects and adds unnecessary noise.</div>
+        </div>
+
+        <div class="quiz-actions">
+          <button class="btn btn-primary" id="quiz-submit" disabled>Submit Quiz</button>
+        </div>
+      </div>
+
+      <div class="quiz-results" id="quiz-results">
+        <div class="quiz-score-circle" id="quiz-score-circle">
+          <div class="quiz-score-num" id="quiz-score-num">0/10</div>
+          <div class="quiz-score-label">Score</div>
+        </div>
+        <div class="quiz-result-msg" id="quiz-result-msg"></div>
+        <div class="quiz-result-sub" id="quiz-result-sub"></div>
+        <button class="btn btn-secondary" id="quiz-retry">Retry Quiz</button>
+      </div>
+
+      <div class="lesson-nav" id="lesson-nav"></div>
+    </main>
+  </div>
+</div>
+<script src="../../js/course.js"></script>
+</body>
+</html>

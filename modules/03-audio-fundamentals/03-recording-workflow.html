@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recording Workflow | Videography Fundamentals</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../../index.html">Videography Fundamentals</a>
+      <div class="sidebar-course-title">Field Production Training</div>
+    </div>
+    <div class="sidebar-progress-bar-wrap">
+      <div class="sidebar-progress-label">Your Progress</div>
+      <div class="sidebar-progress-bar">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="sidebar-progress-count" id="sidebar-progress-count"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+  <div class="main-wrapper">
+    <header class="top-bar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+    </header>
+    <main class="content">
+
+      <div class="lesson-header">
+        <div class="module-tag">Module 3 · Lesson 3</div>
+        <h1>Recording Workflow</h1>
+        <div class="lesson-meta">
+          <span>~10 min read</span>
+          <span>5 objectives</span>
+        </div>
+      </div>
+
+      <div class="objectives-box">
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Compare wired and wireless microphone systems in terms of reliability, range, and setup time.</li>
+          <li>Explain why XLR connectors are preferred over 3.5mm for professional audio.</li>
+          <li>Describe dual-system audio recording and when it is appropriate to use.</li>
+          <li>Explain what phantom power is and which microphones require it.</li>
+          <li>Trace the complete signal chain from microphone to recorder and identify where gain staging applies.</li>
+        </ul>
+      </div>
+
+      <h2>Wired vs Wireless Systems</h2>
+      <p>Every audio workflow starts with a choice: will the microphone connect to your recorder via a physical cable, or will it transmit wirelessly? The right answer depends on the practical demands of the shoot.</p>
+
+      <p><strong>Wired systems</strong> are simple, reliable, and inexpensive. The signal travels from the mic through a cable to your camera or recorder — no batteries, no RF interference, no frequency coordination. The limitation is physical: the cable ties the subject to a fixed point and must be routed carefully to avoid tripping hazards, being stepped on, or appearing in frame. For stationary interviews and panel setups, wired is usually the correct choice.</p>
+
+      <p><strong>Wireless systems</strong> free the subject from the cable. A bodypack transmitter clips to the subject's belt or sits in a pocket; a receiver plugs into your camera or recorder. Wireless lavs are essential for documentary work where a subject is walking, for event speakers moving on a stage, and for any situation where running a cable would be impractical. The costs are real: wireless systems require charged transmitter and receiver batteries, careful frequency selection to avoid interference from other wireless devices in the venue, and some added latency in the signal. Professional digital wireless systems handle these concerns well; cheap consumer systems introduce problems of their own.</p>
+
+      <div class="callout callout-tip">
+        <div class="callout-title">Tip</div>
+        <p>Always carry fresh batteries for your wireless system even if the existing batteries read as charged. At a critical interview, a transmitter dying mid-sentence because a battery was 80% rather than 100% is a preventable disaster. Replace wireless transmitter batteries before every important shoot.</p>
+      </div>
+
+      <h2>XLR vs 3.5mm Connections</h2>
+      <p>Professional microphones use XLR connectors — the large, three-pin connector that locks in place with a release button. Consumer and prosumer equipment often uses 3.5mm (mini-jack) connections. The difference matters.</p>
+
+      <p>XLR cables carry a balanced audio signal: two conductors carrying the audio signal in opposite phase, plus a ground. When the signal arrives at the input, the recorder flips one channel and adds it to the other, which cancels out any noise picked up along the cable. This is called common-mode rejection, and it makes XLR cables nearly immune to the hum and interference that can affect long cable runs. XLR connectors also lock securely — they cannot be bumped loose mid-recording. Professional cameras, audio recorders, and mixers use XLR inputs.</p>
+
+      <p>A 3.5mm connection carries an unbalanced signal, which is susceptible to noise pickup on longer cable runs and can be dislodged by movement. Many prosumer cameras have only a 3.5mm audio input. When you must use a 3.5mm input, keep cable runs short, avoid routing cables near power sources, and check the connection is firmly seated before rolling.</p>
+
+      <h2>Recording Into Camera vs Separate Recorder</h2>
+      <p>You have two destinations for your audio: the camera itself, or a dedicated external audio recorder such as a Zoom H5 or H6, a Tascam DR-series unit, or a Sound Devices MixPre. Each approach has implications for your workflow.</p>
+
+      <p><strong>Recording into the camera</strong> keeps your workflow simple. Audio and video are on the same file, which means no syncing step in post-production. The limitation is that most cameras have basic audio sections — limited preamp quality, less precise level control, and fewer inputs than a dedicated recorder.</p>
+
+      <p><strong>Recording into a separate audio recorder</strong> gives you better preamps, more input options, more precise metering, and the ability to use professional XLR microphones regardless of your camera's inputs. The cost is an additional piece of equipment to manage and an extra step in post to sync the audio to the video.</p>
+
+      <h2>Dual-System Audio</h2>
+      <p>Dual-system audio means recording audio separately from video — camera audio serves as a scratch track or backup, while the primary audio is captured on a dedicated recorder. This is standard practice on professional film and documentary sets.</p>
+
+      <p>The key challenge of dual-system audio is synchronization: how do you match the audio recorder's file to the camera's video file in post? The traditional solution is a slate — a clapperboard. At the top of each take, the camera rolls, the recorder rolls, and someone claps the slate in frame. The sharp transient of the clap appears as a spike on both the video's audio track and the recorder's audio track, giving your editor a precise sync point. Many modern cameras and audio recorders can also sync via timecode, which automates the process for long takes.</p>
+
+      <div class="callout callout-note">
+        <div class="callout-title">Note</div>
+        <p>Even if you are not using a separate recorder, record audio into the camera on at least one channel — even from the built-in mic. This camera audio, called a guide track, gives your editor a reference for syncing any other audio and helps confirm that takes are correctly identified. Silent camera audio files create confusion in post.</p>
+      </div>
+
+      <h2>The Signal Chain</h2>
+      <p>Understanding the path your audio signal travels helps you diagnose problems when they occur. A typical field signal chain looks like this:</p>
+
+      <p><strong>Microphone</strong> — converts sound waves into an electrical signal. The mic's output level is very low (mic level).</p>
+
+      <p><strong>Cable or wireless link</strong> — carries the signal from mic to the next stage. Wireless systems convert the signal to RF, transmit it, and convert it back.</p>
+
+      <p><strong>Preamp</strong> — amplifies the low mic-level signal up to line level. This is where gain is set. The preamp lives inside your camera's audio section, inside a mixer, or inside a dedicated audio recorder. Preamp quality varies significantly between consumer cameras and professional recorders.</p>
+
+      <p><strong>Recorder</strong> — converts the analog signal to digital and writes it to a media card. The recorder's input level control sets how hot the signal is before analog-to-digital conversion.</p>
+
+      <h2>Phantom Power</h2>
+      <p>Condenser microphones — including most professional lavaliers and many shotgun mics — require electrical power to operate. That power can come from a battery inside the mic body, or from a voltage supplied through the XLR cable by the recorder or mixer. This cable-supplied voltage is called phantom power, and it is standardized at 48 volts (commonly written as 48V or +48V).</p>
+
+      <p>Dynamic microphones do not require phantom power and are not damaged by it. However, some ribbon microphones can be damaged by phantom power — always check the specifications before enabling phantom power on an unfamiliar mic.</p>
+
+      <p>On your camera or recorder, phantom power is enabled or disabled in the audio menu. If a condenser mic sounds weak or produces no signal, check whether phantom power is enabled. If a condenser mic is receiving phantom power but still sounds wrong, check the cable — a faulty cable can carry phantom power without carrying the audio signal correctly.</p>
+
+      <div class="callout callout-warning">
+        <div class="callout-title">Common Mistake</div>
+        <p>When connecting or disconnecting XLR cables with phantom power enabled, mute the audio output or turn down the monitor level first. Hot-plugging XLR cables with phantom power active can produce loud pops that, at best, startle your subject and, at worst, damage speakers or headphones connected to the output.</p>
+      </div>
+
+      <h2>Gain Staging</h2>
+      <p>Gain staging is the practice of setting appropriate signal levels at each point in the signal chain — not too hot, not too quiet. The goal is to maintain a healthy signal-to-noise ratio (enough signal above the noise floor) without allowing the signal to clip at any stage. Set your mic's sensitivity correctly, then set the preamp gain so the signal peaks in a healthy range on your meters, then set the recorder's input level to match. If the level is set wrong at one stage, fixing it at a later stage amplifies the problem along with the signal.</p>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">What is the purpose of recording a slate clap at the top of a take in dual-system audio?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">It signals to the subject that recording has begun.</button>
+          <button class="kc-option" data-correct="true">The sharp transient of the clap appears as a visible spike on both the camera's audio track and the external recorder's file, giving the editor a precise synchronization point.</button>
+          <button class="kc-option" data-correct="false">It sets the audio levels for the take automatically.</button>
+          <button class="kc-option" data-correct="false">It marks the point where phantom power is activated.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">Why does an XLR balanced cable reject interference better than a 3.5mm unbalanced cable?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">XLR cables use thicker copper wire that blocks electromagnetic fields.</button>
+          <button class="kc-option" data-correct="false">XLR connectors are shielded with a grounding ring that absorbs RF noise.</button>
+          <button class="kc-option" data-correct="true">The balanced signal carries the audio on two conductors in opposite phase; any noise picked up along the cable is identical on both conductors and cancels out when the two signals are combined at the input.</button>
+          <button class="kc-option" data-correct="false">XLR cables carry a higher voltage signal that is less susceptible to interference.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="key-takeaways">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>Wired systems are more reliable for stationary setups; wireless systems are necessary for subjects who will be moving but require battery management and frequency coordination.</li>
+          <li>XLR connections use balanced signals that reject cable noise — prefer XLR over 3.5mm whenever your equipment supports it.</li>
+          <li>Dual-system audio captures higher-quality audio on a dedicated recorder and uses a slate clap or timecode to sync it to video in post.</li>
+          <li>Phantom power (48V) is required by condenser microphones; it is supplied through the XLR cable by your recorder or mixer and must be enabled in the audio settings.</li>
+          <li>Gain staging means setting appropriate levels at each point in the signal chain — mic sensitivity, preamp gain, and recorder input level — so the signal is neither too quiet nor clipping at any stage.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-nav" id="lesson-nav"></div>
+    </main>
+  </div>
+</div>
+<script src="../../js/course.js"></script>
+</body>
+</html>

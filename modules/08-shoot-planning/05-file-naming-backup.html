@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Naming and Backup Workflow | Videography Fundamentals</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../../index.html">Videography Fundamentals</a>
+      <div class="sidebar-course-title">Field Production Training</div>
+    </div>
+    <div class="sidebar-progress-bar-wrap">
+      <div class="sidebar-progress-label">Your Progress</div>
+      <div class="sidebar-progress-bar">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="sidebar-progress-count" id="sidebar-progress-count"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+  <div class="main-wrapper">
+    <header class="top-bar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+    </header>
+    <main class="content">
+      <div class="lesson-header">
+        <div class="module-tag">Module 8 · Lesson 5</div>
+        <h1>File Naming and Backup Workflow</h1>
+        <div class="lesson-meta"><span>~10 min read</span><span>5 objectives</span></div>
+      </div>
+
+      <div class="objectives-box">
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Apply the date-first naming convention to production files consistently.</li>
+          <li>Explain why camera roll labels (A, B, C) are used and what they indicate.</li>
+          <li>Set up a folder structure that separates raw media from deliverables and notes.</li>
+          <li>Execute a two-copy ingestion workflow before formatting any card.</li>
+          <li>Use physical card labeling to prevent accidental formatting of unverified footage.</li>
+        </ul>
+      </div>
+
+      <h2>Why File Naming Consistency Matters</h2>
+      <p>Inconsistent file naming is a tax that editors and collaborators pay every day — searching for footage they cannot find, identifying clips by opening them rather than reading the filename, and reconciling media from multiple shoots that has been dumped into the same folder with camera-generated names like MVI_0042.mp4 and A001_C002.MP4.</p>
+      <p>A consistent naming convention eliminates this friction. An editor who receives a folder of correctly named files can identify what any clip is, when it was shot, which camera it came from, and roughly where it sits in the shoot sequence — without opening a single file. That efficiency compounds over a production with hundreds of clips.</p>
+      <p>The naming convention also protects against accidental overwrites. Camera-generated filenames reset periodically — two shoots on the same camera can produce clips with identical names. If those clips end up in the same folder, one will overwrite the other silently. A date-first convention with project name and roll identifiers makes this nearly impossible.</p>
+
+      <h2>The Date-First Naming Convention</h2>
+      <p>The recommended format is: <strong>YYYYMMDD_ProjectName_CameraRoll_ClipNumber</strong></p>
+      <p>Example: <code>20240315_StaffInterview_A001_0042.mp4</code></p>
+      <p>Breaking this down:</p>
+      <ul>
+        <li><strong>20240315</strong> — the date in year-month-day format. This format sorts chronologically when files are sorted alphabetically, which is the primary reason to use it. A folder containing footage from multiple shoot days will sort correctly without any manual reorganization.</li>
+        <li><strong>StaffInterview</strong> — a short project identifier. Keep it concise, use no spaces (use underscores or CamelCase), and make it specific enough to distinguish from other projects. "Video" or "Project" is not useful. "SmithWeddingHighlight" or "AnnualReport2024" is.</li>
+        <li><strong>A001</strong> — the camera roll identifier. The letter identifies the camera position (A = primary, B = secondary, C = third), and the number identifies which roll of that camera's footage this is. A001 is the first roll from the primary camera; B002 is the second roll from the secondary camera. This tells editors immediately which angle they are looking at without having to open the clip.</li>
+        <li><strong>0042</strong> — the clip number, zero-padded so files sort correctly (0001 rather than 1, so that 0010 does not sort before 0002).</li>
+      </ul>
+
+      <div class="callout callout-note">
+        <div class="callout-title">Note</div>
+        <p>Many cameras allow you to set a custom filename prefix in the settings menu. If your camera supports this, configure it to match your naming convention before every shoot. The camera will then append its own clip counter to your prefix, giving you consistently named raw files without any manual renaming during ingestion.</p>
+      </div>
+
+      <h2>Camera Roll Labels</h2>
+      <p>A-roll and B-roll are terms that can mean two different things in production contexts, and it is important to understand both uses.</p>
+      <p>In the context of camera rolls, the letters refer to camera positions or angles: A-roll is the main camera — the primary angle covering the interview or the primary action. B-roll is the second camera — a second angle on the interview, a close-up, or a different perspective on the same action. C-roll is a third camera angle, used in larger productions. These labels tell the editor which physical camera each clip came from and what role it played in the coverage.</p>
+      <p>This is different from the editorial use of "B-roll" to mean supplementary footage — cutaways and illustrative shots. In editorial usage, B-roll is a type of content. In camera roll labeling, B-roll is a camera position. When your team uses both terms, be explicit about which meaning you intend to avoid confusion.</p>
+
+      <h2>Folder Structure</h2>
+      <p>A consistent folder structure is as important as consistent naming. Even perfectly named files become difficult to navigate if they are all in one flat folder. The recommended structure separates raw media from deliverables and production notes:</p>
+      <pre><code>ProjectName/
+  YYYYMMDD/
+    RAW/
+      Video/
+        A-Roll/
+        B-Roll/
+      Audio/
+      Stills/
+    Deliverables/
+    Notes/</code></pre>
+      <p>The date folder at the top of the RAW hierarchy makes it easy to find footage from a specific shoot day on a multi-day production. The separation of Video, Audio, and Stills under RAW matches the workflow of most editors, who import these asset types separately. The Deliverables folder holds exported files — finished videos, audio masters, graphic assets. The Notes folder holds the brief, the shot list, the schedule, the location report, and any communication relevant to the project.</p>
+      <p>Create this folder structure before ingestion begins — do not create it retroactively after dumping files into an unorganized folder. The ingestion workflow (described below) assumes the structure already exists.</p>
+
+      <div class="callout callout-tip">
+        <div class="callout-title">Tip</div>
+        <p>Create a folder structure template that you duplicate for every new project. Keep the empty template in a location that is easy to find and copy. Duplicating a template takes 10 seconds; building the structure from scratch every time takes 3 minutes and introduces inconsistencies.</p>
+      </div>
+
+      <h2>The Backup Rule</h2>
+      <p>The backup rule is simple and non-negotiable: two copies of every file before you format any card. Not one copy — two. Not approximately two — exactly two, verified.</p>
+      <p>The reason is straightforward: hard drives fail. Cards fail. Files become corrupted. If you have one copy and it fails, you have nothing. If you have two copies on separate physical drives and one fails, you still have everything. The cost of maintaining two copies is a second hard drive; the cost of not having a second copy is potentially losing footage that cannot be recreated.</p>
+
+      <h2>The Ingestion Workflow</h2>
+      <p>Ingestion is the process of getting footage from camera cards to the edit drive and the backup drive. Execute it in this order, every time:</p>
+      <ol>
+        <li><strong>Connect the card</strong> and open the RAW/Video folder for the relevant camera roll.</li>
+        <li><strong>Copy to primary (edit drive)</strong> — drag-copy or use an ingestion application to copy all files from the card to the correct folder on the edit drive. Do not move files — copy them. The original on the card remains intact until the workflow is complete.</li>
+        <li><strong>Verify the copy</strong> — confirm the file count and total size of the copied folder match the source. Many ingestion applications (such as ShotPut Pro or DaVinci Resolve's media import) do this automatically with a checksum comparison. If you are copying manually, at minimum compare the file count and total folder size.</li>
+        <li><strong>Copy to backup drive</strong> — repeat the copy process to a second physical drive that is not the edit drive. The backup drive should be physically separate from the edit drive — in your bag, in the car, or at a different location.</li>
+        <li><strong>Verify the backup copy</strong> — repeat the verification step for the backup drive.</li>
+        <li><strong>Format the card</strong> — only after both copies are verified. Format the card in-camera.</li>
+      </ol>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">You have finished ingesting footage from a shoot. Your edit drive shows the correct file count and total size. Can you now format the card?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">Yes — one verified copy is sufficient to format the card safely.</button>
+          <button class="kc-option" data-correct="false">Yes — the file count and size match, which confirms the footage is safe.</button>
+          <button class="kc-option" data-correct="true">No — you must also copy to a second physical backup drive and verify that copy before formatting.</button>
+          <button class="kc-option" data-correct="false">No — you must wait 24 hours after ingestion before formatting, in case of delayed file corruption.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <h2>Physical Card Labeling</h2>
+      <p>In the field during a multi-card shoot, it is easy to lose track of which cards have been shot on and which are blank. A single piece of gaffer tape provides the solution. When a card comes out of the camera after recording, immediately place a small piece of gaffer tape over the contacts or across the card with a handwritten note: "SHOT – DO NOT FORMAT." When a card has been successfully ingested and backed up, the tape comes off and the card goes back into the fresh-cards pouch. This physical marker prevents the single most demoralizing error in field production: reformatting a card before the footage has been safely backed up.</p>
+      <p>Never, under any circumstances, format a card in the field without confirming that two verified copies exist. If you are not certain — if the backup drive is not physically present, if you have not run a verification step — do not format the card. Carry the shot card home and format it at your desk after completing the full ingestion workflow.</p>
+
+      <div class="callout callout-warning">
+        <div class="callout-title">Common Mistake</div>
+        <p>Copying footage to a laptop drive and treating that as the "backup" while the original card is the "primary." A laptop and a card stored in the same bag are not two separate copies — if the bag is stolen, lost, or submerged, both copies are gone. Two copies means two physically separate locations, not two copies in the same bag or device.</p>
+      </div>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">What is the purpose of placing a piece of gaffer tape on a card immediately after it comes out of the camera?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">To protect the card's contact pins from physical damage during transport.</button>
+          <button class="kc-option" data-correct="true">To visually mark the card as containing unverified footage that must not be formatted until the ingestion workflow is complete.</button>
+          <button class="kc-option" data-correct="false">To indicate which roll number the card contains for labeling purposes.</button>
+          <button class="kc-option" data-correct="false">To prevent static discharge when handling the card outside the camera.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="key-takeaways">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>The date-first naming convention (YYYYMMDD_ProjectName_CameraRoll_ClipNumber) sorts chronologically, prevents filename collisions, and lets editors identify clips without opening them.</li>
+          <li>Camera roll letters (A, B, C) identify the camera position in the coverage — primary, secondary, and tertiary angles respectively.</li>
+          <li>A consistent folder structure (RAW/Video/Audio/Stills, Deliverables, Notes) should be created before ingestion begins, not retroactively.</li>
+          <li>The backup rule is two verified copies on separate physical drives before any card is formatted — one copy is never enough.</li>
+          <li>Gaffer tape on a shot card is a simple physical safeguard against the most catastrophic ingestion error: formatting unverified footage.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-nav" id="lesson-nav"></div>
+    </main>
+  </div>
+</div>
+<script src="../../js/course.js"></script>
+</body>
+</html>

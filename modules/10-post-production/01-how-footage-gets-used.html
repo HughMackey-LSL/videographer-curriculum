@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Footage Gets Used | Videography Fundamentals</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../../index.html">Videography Fundamentals</a>
+      <div class="sidebar-course-title">Field Production Training</div>
+    </div>
+    <div class="sidebar-progress-bar-wrap">
+      <div class="sidebar-progress-label">Your Progress</div>
+      <div class="sidebar-progress-bar">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="sidebar-progress-count" id="sidebar-progress-count"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+  <div class="main-wrapper">
+    <header class="top-bar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+    </header>
+    <main class="content">
+      <div class="lesson-header">
+        <div class="module-tag">Module 10 · Lesson 1</div>
+        <h1>How Footage Gets Used</h1>
+        <div class="lesson-meta"><span>~8 min read</span><span>4 objectives</span></div>
+      </div>
+
+      <div class="objectives-box">
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Describe the major stages of a post-production workflow from an editor's perspective.</li>
+          <li>Explain why frame rate consistency is the shooter's responsibility.</li>
+          <li>Compare codec choices and their impact on editing performance.</li>
+          <li>Understand how delivery format influences production decisions.</li>
+        </ul>
+      </div>
+
+      <h2>The Editor's Starting Point</h2>
+      <p>When you hand off your cards or drive, an editor sits down and begins a process you may never see. Understanding that process changes how you shoot. Every decision you make on set — frame rate, codec, clip length, labeling — either makes the editor's job faster or adds friction to it. A shooter who understands post is a shooter who gets called back.</p>
+
+      <p>The post-production workflow moves through several distinct stages. Each stage depends on the quality of what came before it. Problems introduced on set compound at every step.</p>
+
+      <h2>The Post-Production Workflow</h2>
+
+      <h3>Ingestion</h3>
+      <p>Ingestion is the first stage: copying all media from the camera cards to an edit drive, then organizing clips into a project folder structure. A well-organized handoff (consistent naming, clear folder hierarchy) means the editor can ingest in minutes. A disorganized handoff — mixed card contents, misnamed files, no folder structure — can add an hour of unpaid admin work before editing even begins. The editor also verifies that all files transferred correctly and that nothing is corrupt. This is why a verified backup on your end matters: if a file is corrupt, you may still have the original.</p>
+
+      <h3>Review and Selection</h3>
+      <p>After ingestion, the editor skims every clip, flagging the best takes and marking unusable ones. This is where clip quality becomes visible. A clip that is slightly soft, slightly underexposed, or slightly clipped in audio gets flagged — and if it is the only take, the editor is stuck with it. The review stage also reveals coverage gaps: moments the editor needs that simply were not shot.</p>
+
+      <h3>Assembly and Fine Cut</h3>
+      <p>Assembly is the rough cut: the editor places the best material in sequence to build the story. The fine cut refines timing, removes dead air, and adds transitions. At both stages, the editor works with what you gave them. More coverage gives more options; less coverage forces the editor into compromises.</p>
+
+      <h3>Color and Audio</h3>
+      <p>After the picture is locked, color correction and audio mixing happen. These stages are refinements — they improve clean work, but they cannot rescue fundamentally broken footage. An overexposed clip can be pulled down slightly, but detail lost to blown highlights is gone. A noisy recording can be cleaned up a little, but distorted audio cannot be undistorted.</p>
+
+      <h3>Export</h3>
+      <p>The final stage is export: rendering the finished edit to a delivery format. The target platform — YouTube, broadcast television, a social media vertical — determines the codec, resolution, frame rate, and audio specs of the export. These delivery requirements sometimes work backward to constrain production decisions.</p>
+
+      <div class="callout callout-tip">
+        <div class="callout-title">Tip</div>
+        <p>Ask about the delivery format before you shoot. If the final destination is Instagram Reels, you may need vertical framing for some shots. If it is broadcast, there may be strict technical specs for frame rate and audio levels. Knowing the end point helps you make better decisions at the beginning.</p>
+      </div>
+
+      <h2>Why Frame Rate Consistency Matters</h2>
+      <p>Frame rate is one of the most technically consequential decisions on set, and one that shooters frequently get wrong. The two most common frame rates in professional work are 23.976 fps (sometimes called 24p) and 29.97 fps (sometimes called 30p). They look slightly different — 23.976 has a more cinematic motion quality; 29.97 is smoother and more broadcast-standard.</p>
+
+      <p>The problem occurs when both appear in the same project. An edit project is set to one timeline frame rate. If you drop a 23.976 clip into a 29.97 timeline — or vice versa — the editing software must retime the clip to fit. Depending on the software and settings, this either produces subtle stuttering, adds or drops frames, or requires the editor to manually apply retiming to every mismatched clip. In a multi-camera shoot where one camera was accidentally left at the wrong frame rate, this can mean hours of remedial work.</p>
+
+      <p>This is the shooter's responsibility to prevent. Before recording anything, verify that every camera on the shoot is set to the same frame rate. If you are working alongside another shooter, confirm with them. Write it on your shot sheet. Check it again after a battery swap, because some cameras reset to a default frame rate when powered off and back on.</p>
+
+      <div class="callout callout-warning">
+        <div class="callout-title">Common Mistake</div>
+        <p>Switching cameras to slow-motion mode (typically 60fps or 120fps) and forgetting to switch back. The camera records at the high frame rate, you hand off the card, and the editor discovers that the interview clips are at 120fps. Always check your frame rate after any slow-motion work.</p>
+      </div>
+
+      <h2>Codecs and Editing Performance</h2>
+      <p>A codec is the method used to compress and store video data. Your choice of codec affects two things: how large your files are and how hard the editing computer has to work to play them back.</p>
+
+      <p>H.264 and H.265 are highly compressed codecs designed for efficient storage. They are the standard format for consumer cameras and are what you get when you shoot on a DSLR or mirrorless camera set to standard recording. The compression is "inter-frame," meaning frames are stored relative to each other rather than as individual images. This is efficient for storage but computationally expensive to decode during editing. On slower machines, H.264 footage can stutter during playback, making it difficult to edit smoothly.</p>
+
+      <p>ProRes (Apple), DNxHR (Avid), and Blackmagic RAW are "professional" codecs that use larger files but are designed for editing performance. They decompress faster, enabling smoother playback on editing hardware. They are the standard in professional broadcast and film workflows for this reason.</p>
+
+      <h3>Proxy Workflows</h3>
+      <p>When a camera shoots high-resolution, highly compressed footage that is difficult to edit directly, editors use a proxy workflow: they transcode the original files into a lower-resolution, easier-to-edit version (the proxy), edit using those, then relink to the original high-resolution files for export. The proxy files are temporary stand-ins.</p>
+
+      <p>Proxy workflows add time to the start of post: someone has to generate the proxies before editing can begin. Some cameras can generate proxies in-camera simultaneously with the main recording, which shortens this step. If you know the post team uses a proxy workflow, ask whether they want you to deliver camera-generated proxies or whether they prefer to generate their own.</p>
+
+      <div class="callout callout-note">
+        <div class="callout-title">Note</div>
+        <p>You do not need to become an expert in codecs. You do need to know what your camera records, whether there are higher-quality codec options available on that camera, and what the project's post-production workflow requires. When in doubt, ask the editor or producer before you shoot.</p>
+      </div>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">An editor opens a multi-camera project and discovers that one camera recorded at 23.976 fps while the other recorded at 29.97 fps. What is the most likely consequence?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">The footage from both cameras will play back at the same speed automatically.</button>
+          <button class="kc-option" data-correct="false">The editor can simply export at both frame rates simultaneously.</button>
+          <button class="kc-option" data-correct="true">The mismatched clips will require retiming, which may introduce stuttering or cost additional editing time.</button>
+          <button class="kc-option" data-correct="false">Frame rate mismatches only affect slow-motion clips, not normal recording.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <h2>How Delivery Format Affects Production</h2>
+      <p>The platform where the finished video will live has technical requirements that can work backward into your production decisions. YouTube accepts nearly any frame rate and resolution, which gives flexibility. Broadcast television has strict specs: specific frame rates, specific audio levels (measured in LUFS), specific color space requirements. Social media may require aspect ratios that differ from your camera's native output.</p>
+
+      <p>A producer or director who knows the delivery format can make these decisions before the shoot. If they do not tell you, ask. "What's the delivery destination?" is a question every shooter should be comfortable asking. The answer may change which aspect ratio you protect in your framing, what frame rate you lock in, or whether you need to shoot any footage in a vertical orientation.</p>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">Why is H.264 considered harder to edit than ProRes, even though H.264 files are smaller?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">H.264 uses a higher bit depth, which requires more processing power.</button>
+          <button class="kc-option" data-correct="true">H.264 uses inter-frame compression that is computationally expensive to decode during editing playback.</button>
+          <button class="kc-option" data-correct="false">H.264 files cannot be imported into professional editing software.</button>
+          <button class="kc-option" data-correct="false">H.264 stores more color information per frame, slowing the timeline.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="key-takeaways">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>Post-production moves through ingestion, review, assembly, fine cut, color, audio, and export — and every stage depends on quality decisions made on set.</li>
+          <li>Mismatched frame rates in a project require retiming and can produce stuttering; verifying frame rate consistency across all cameras is the shooter's job.</li>
+          <li>H.264 is storage-efficient but computationally demanding to edit; ProRes and Blackmagic RAW are designed for editing performance.</li>
+          <li>Proxy workflows allow editors to cut using smaller stand-in files; some cameras generate proxies in-camera during recording.</li>
+          <li>Asking about the delivery destination before you shoot is a professional habit — the answer affects framing, frame rate, and codec decisions.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-nav" id="lesson-nav"></div>
+    </main>
+  </div>
+</div>
+<script src="../../js/course.js"></script>
+</body>
+</html>

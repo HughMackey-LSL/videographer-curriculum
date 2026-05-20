@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Organization and Media Handoff | Videography Fundamentals</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../../index.html">Videography Fundamentals</a>
+      <div class="sidebar-course-title">Field Production Training</div>
+    </div>
+    <div class="sidebar-progress-bar-wrap">
+      <div class="sidebar-progress-label">Your Progress</div>
+      <div class="sidebar-progress-bar">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="sidebar-progress-count" id="sidebar-progress-count"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+  <div class="main-wrapper">
+    <header class="top-bar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+    </header>
+    <main class="content">
+      <div class="lesson-header">
+        <div class="module-tag">Module 6 · Lesson 5</div>
+        <h1>File Organization and Media Handoff</h1>
+        <div class="lesson-meta"><span>~10 min read</span><span>4 objectives</span></div>
+      </div>
+
+      <div class="objectives-box">
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Apply a consistent file naming convention using date-first format.</li>
+          <li>Build a standard project folder structure for video production.</li>
+          <li>Describe the backup rule and why it is non-negotiable.</li>
+          <li>Execute a proper media handoff to shared storage or an editor.</li>
+        </ul>
+      </div>
+
+      <h2>Why Media Organization Is as Important as the Footage</h2>
+      <p>Outstanding footage inside a disorganized folder structure is frustrating to work with. An editor who receives unlabeled media from multiple cards, mixed with stills and audio files in a single folder, must spend hours sorting before a single cut can be made. In a busy production environment, disorganized media does not just slow down the edit — it creates errors. The wrong take gets used. Coverage gets missed because a clip was in an unexpected location. An archival project becomes unusable because no one can find the original files three years later.</p>
+      <p>Media organization is a professional responsibility. It is not a clerical task you do when time allows — it is part of the production workflow. The operator who returns with clean, organized, well-named media is the operator who editors want to work with and producers want to book again.</p>
+
+      <h2>File Naming Conventions</h2>
+      <p>A consistent file naming system lets anyone — including yourself six months from now — navigate media without guessing. The standard approach for institutional video production uses a date-first format combined with project name, card/roll designation, and sequence number.</p>
+      <p>The recommended format is:</p>
+      <p><strong>YYYYMMDD_ProjectName_RollID_Sequence.Extension</strong></p>
+      <p>For example: <code>20240315_FacultyWorkshop_A001_0023.MP4</code></p>
+      <p>Breaking this down: <strong>20240315</strong> is March 15, 2024 in ISO date format. Date-first sorting means files from the same project automatically group chronologically in any file browser. <strong>FacultyWorkshop</strong> is a short, descriptive project name with no spaces (use underscores or CamelCase — spaces in filenames cause problems in many software environments). <strong>A001</strong> is the card identifier — A for the first card, B for the second, 001 for the first roll on that card. <strong>0023</strong> is the clip sequence number, and <strong>.MP4</strong> is the file extension from the camera.</p>
+
+      <div class="callout callout-important">
+        <div class="callout-title">Important</div>
+        <p>Do not rename individual camera files after they have been delivered to shared storage or an edit drive. Renaming files breaks links in editing software that has already indexed the original names. If the naming convention was not applied during ingest, discuss with the editor before making changes.</p>
+      </div>
+
+      <h2>Labeling Cards in the Field</h2>
+      <p>Before a shoot, label every card with gaffer tape and a permanent marker. Include the project name and card letter (A, B, C) at minimum. During the shoot, keep shot cards and empty cards physically separated — never mix them. Many operators keep shot cards in a dedicated pocket or case and empty cards in a separate location. This prevents the catastrophic error of reformatting a card that has not been backed up.</p>
+      <p>If you fill multiple cards on a shoot, label each sequentially: Card A, Card B, and so on. If you use multiple cameras, include the camera designation as well: Cam1-CardA, Cam2-CardA. The goal is to be able to reconstruct which footage came from which camera and which card without relying on memory.</p>
+
+      <h2>Folder Structure</h2>
+      <p>Every project should live in a single root folder named with the date and project name. Inside that root folder, maintain consistent subfolders across all projects. A standard structure looks like this:</p>
+      <ul>
+        <li><strong>20240315_FacultyWorkshop/</strong> (root project folder)
+          <ul>
+            <li><strong>VIDEO/</strong> — all camera files, organized by card if multiple cards were used</li>
+            <li><strong>AUDIO/</strong> — any separate audio recordings from a field recorder or wireless receiver</li>
+            <li><strong>STILLS/</strong> — any photography captured during the same shoot</li>
+            <li><strong>NOTES/</strong> — shot lists, briefs, release forms, production notes, and any written documentation</li>
+            <li><strong>GRAPHICS/</strong> — logos, lower-third text files, or other assets provided for the edit (if applicable)</li>
+          </ul>
+        </li>
+      </ul>
+      <p>Consistency in folder structure means any team member can navigate a project folder without guidance. When the same structure is used on every project, finding a specific type of file becomes instinctive rather than a search.</p>
+
+      <div class="callout callout-tip">
+        <div class="callout-title">Tip</div>
+        <p>Create the project folder structure before the shoot and bring it with you on the edit drive. This way, you can ingest directly into the correct subfolders rather than doing organizational work after the fact. Setup takes two minutes; reorganizing 80GB of footage takes much longer.</p>
+      </div>
+
+      <h2>The Backup Rule</h2>
+      <p>The backup rule is simple and non-negotiable: always have two complete copies of your footage before formatting any media card. One copy is the primary — typically on the edit drive. The second copy is the backup — on a separate physical drive, not a second partition of the same drive. Two copies on the same physical device do not count as a backup because drive failures take both copies simultaneously.</p>
+      <p>The backup should be made at the earliest possible opportunity — ideally the same day as the shoot, before the cards leave your possession. Do not wait until you are back at the office tomorrow. Hard drives fail. Cards get lost. Laptops get stolen. The footage that was not backed up is the footage that disappears.</p>
+      <p>Only after both copies have been verified as complete and readable should you format the original media card. Verification means opening the folder, spot-checking clips for playback, and confirming that the file count matches your records. A silent, unreadable copy is not a backup.</p>
+
+      <div class="callout callout-warning">
+        <div class="callout-title">Common Mistake</div>
+        <p>Formatting a card after copying to only one location. A drive can fail during the transfer, producing a partial copy with no way to recover. Make both copies first, verify both, then format. This sequence protects you against hardware failure at any point in the process.</p>
+      </div>
+
+      <h2>Ingesting Footage</h2>
+      <p>Ingest is the process of copying footage from camera cards to the edit drive. Do this methodically:</p>
+      <ol>
+        <li>Connect the card or card reader to the computer.</li>
+        <li>Open the correct project folder on the edit drive and navigate to the VIDEO subfolder.</li>
+        <li>Copy (do not move) the files from the card to the drive. Moving files risks data loss if the transfer is interrupted; copying leaves the originals on the card until you are ready to format.</li>
+        <li>Wait for the copy to complete fully. Do not interrupt a transfer.</li>
+        <li>Spot-check the copied files for playback and completeness.</li>
+        <li>Eject the card safely through the operating system before physically removing it.</li>
+        <li>Repeat for all cards.</li>
+        <li>Make the backup copy to the secondary drive.</li>
+        <li>Verify the backup.</li>
+        <li>Format the original cards only after both copies are confirmed.</li>
+      </ol>
+
+      <h2>Delivering Media to Shared Storage</h2>
+      <p>When delivering media to shared storage — a server, shared network drive, or cloud folder — follow any naming and location conventions your team uses. If conventions do not exist, establish them. Drop the organized project folder in the agreed location and communicate to the editor that the media is ready: send a message or email that includes the project folder name and location, a summary of what was shot, and any notes about the footage (card A is the interview; the wide shot at 09:14:22 has an audio issue; the B-roll of the exterior was shot at the end of the day in lower light).</p>
+      <p>This communication prevents the editor from having to sort through footage with no context and ensures that known issues are flagged rather than discovered mid-edit.</p>
+
+      <h2>What Not to Do</h2>
+      <ul>
+        <li><strong>Do not rename footage after delivery.</strong> Once the editor has indexed the files, renaming breaks the project links.</li>
+        <li><strong>Do not format cards before backup.</strong> No exceptions.</li>
+        <li><strong>Do not hand off media without notes.</strong> The editor is not present at the shoot and has no way to know what is on each card without documentation.</li>
+        <li><strong>Do not mix projects in a single folder.</strong> Each project gets its own root folder. Shared folders create confusion when projects are revisited.</li>
+        <li><strong>Do not rely on camera-generated filenames alone.</strong> Cameras generate sequential filenames that reset when a new card is inserted, creating duplicate names across multiple cards.</li>
+      </ul>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">Using the standard date-first naming convention, which of the following filenames is correctly formatted?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">FacultyWorkshop_2024_March15_Clip01.MP4</button>
+          <button class="kc-option" data-correct="false">March15-2024 Faculty Workshop A001.MP4</button>
+          <button class="kc-option" data-correct="true">20240315_FacultyWorkshop_A001_0001.MP4</button>
+          <button class="kc-option" data-correct="false">A001_FacultyWorkshop_0315_2024.MP4</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">According to the backup rule, when is it safe to format a camera card?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">After copying the footage to the edit drive</button>
+          <button class="kc-option" data-correct="false">After the editor has confirmed they have received the files</button>
+          <button class="kc-option" data-correct="false">After saving two copies to different partitions of the same drive</button>
+          <button class="kc-option" data-correct="true">After two complete copies on separate physical drives have been verified as readable</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="key-takeaways">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>Media organization is a professional responsibility — disorganized media costs editors hours and creates avoidable errors.</li>
+          <li>Use date-first file naming: YYYYMMDD_ProjectName_RollID_Sequence.Extension.</li>
+          <li>Label cards in the field with gaffer tape before the shoot; keep shot and empty cards physically separated.</li>
+          <li>Every project gets a single root folder with consistent subfolders: VIDEO, AUDIO, STILLS, NOTES.</li>
+          <li>The backup rule is non-negotiable: two complete copies on separate physical drives, both verified, before formatting any card.</li>
+          <li>Always communicate to the editor when media is delivered, including a summary of what was shot and any known issues.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-nav" id="lesson-nav"></div>
+    </main>
+  </div>
+</div>
+<script src="../../js/course.js"></script>
+</body>
+</html>

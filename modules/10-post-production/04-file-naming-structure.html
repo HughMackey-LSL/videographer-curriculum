@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Naming and Folder Structure | Videography Fundamentals</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../../index.html">Videography Fundamentals</a>
+      <div class="sidebar-course-title">Field Production Training</div>
+    </div>
+    <div class="sidebar-progress-bar-wrap">
+      <div class="sidebar-progress-label">Your Progress</div>
+      <div class="sidebar-progress-bar">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="sidebar-progress-count" id="sidebar-progress-count"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+  <div class="main-wrapper">
+    <header class="top-bar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+    </header>
+    <main class="content">
+      <div class="lesson-header">
+        <div class="module-tag">Module 10 · Lesson 4</div>
+        <h1>File Naming and Folder Structure</h1>
+        <div class="lesson-meta"><span>~8 min read</span><span>4 objectives</span></div>
+      </div>
+
+      <div class="objectives-box">
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Construct a file name that communicates date, project, camera roll, and clip number.</li>
+          <li>Describe a recommended folder hierarchy for a video project handoff.</li>
+          <li>Explain why the RAW folder should never be modified after delivery.</li>
+          <li>Identify what belongs in a post-shoot notes file.</li>
+        </ul>
+      </div>
+
+      <h2>The Folder Opens and the Editor Forms a First Impression</h2>
+      <p>The first thing an editor does when they receive your media is open the project folder. In that first few seconds, they learn something about you as a professional. A well-organized folder tells them: this shooter knows how post-production works, this media is safe to use, and I can start editing quickly. A disorganized folder tells them something different.</p>
+
+      <p>File organization is not glamorous work. It does not appear on screen. The audience never knows whether the clips were labeled systematically or haphazardly. But the editor knows — and the time wasted on disorganized media is real time, measured in hours, that could have been spent on the edit itself.</p>
+
+      <h2>The Problem with Camera-Generated File Names</h2>
+      <p>Cameras generate file names automatically. A Sony camera might produce <code>C0001.MP4</code>, <code>C0002.MP4</code>. A Canon might produce <code>MVI_3847.MOV</code>. A DJI drone might produce <code>DJI_0042.MP4</code>. These names communicate almost nothing about the content. They convey no information about the project, the shoot date, which camera the clip came from, or what the clip contains.</p>
+
+      <p>When an editor receives a folder containing hundreds of clips named by camera default, they have no way to understand the material without opening each clip individually. In a multi-camera shoot where two cameras both used default naming and their clip numbers overlap, the editor cannot tell which clips came from which camera without checking the metadata of each file.</p>
+
+      <p>Renaming files before delivery is a professional responsibility. It takes additional time but eliminates confusion for everyone downstream — including yourself when you look at the project six months later.</p>
+
+      <h2>A Good File Naming Convention</h2>
+      <p>A well-structured file name answers these questions at a glance: When was this shot? What project is it for? Which camera recorded it? What is the clip number in sequence?</p>
+
+      <p>A practical convention that covers all of these:</p>
+      <pre><code>YYYYMMDD_ProjectName_CamLetter_RollNumber_ClipNumber.ext</code></pre>
+
+      <p>For example:</p>
+      <pre><code>20240315_StaffInterview_A_R01_0023.MP4
+20240315_StaffInterview_B_R01_0008.MP4</code></pre>
+
+      <p>Breaking this down:</p>
+      <ul>
+        <li><strong>20240315</strong> — The shoot date in YYYY-MM-DD format. This format sorts chronologically when files are sorted alphabetically, which is a significant practical advantage.</li>
+        <li><strong>StaffInterview</strong> — The project name or short descriptor. Keep it concise and avoid spaces (use underscores or CamelCase instead, as spaces cause problems in some software and command-line environments).</li>
+        <li><strong>A</strong> — Camera identifier. Camera A is the primary camera; Camera B is the secondary. This distinguishes clips from different cameras when clip numbers overlap.</li>
+        <li><strong>R01</strong> — Roll number. Cameras reset their clip counter when a card is formatted. A roll number distinguishes Card 1 from Card 2 from Card 3 within a project.</li>
+        <li><strong>0023</strong> — The clip number from the camera, zero-padded to four digits so files sort correctly.</li>
+      </ul>
+
+      <div class="callout callout-tip">
+        <div class="callout-title">Tip</div>
+        <p>Always confirm the naming convention with the production team or editor before the shoot. Some organizations have established naming standards that differ from any generic convention. Using their standard ensures your media integrates seamlessly with their existing project structure.</p>
+      </div>
+
+      <h2>Recommended Folder Structure</h2>
+      <p>Folder structure should separate raw media, working files, and project outputs into clearly labeled containers. A functional hierarchy for a typical video project:</p>
+
+      <pre><code>ProjectName/
+  YYYYMMDD/
+    RAW/
+      Camera_A/
+      Camera_B/
+      Audio/
+    Exports/
+    Notes/</code></pre>
+
+      <p>Breaking this down by purpose:</p>
+
+      <h3>RAW/</h3>
+      <p>The RAW folder contains the original camera files and audio recordings, exactly as they came off the cards. This folder is the archive. It should never be modified, rearranged, or have files deleted from it once the media has been verified and backed up. Editors work from copies, not from the RAW folder directly. The RAW folder is the source of truth, and its integrity is paramount.</p>
+
+      <h3>Camera_A/ and Camera_B/</h3>
+      <p>Separate subfolders for each camera's media prevent clip number collisions and make it immediately clear which clips came from which camera. If Camera A and Camera B both have a clip numbered 0042, they coexist without conflict in their respective subfolders.</p>
+
+      <h3>Audio/</h3>
+      <p>Audio recorder files belong here: WAV files from a field recorder, boom operator recordings, or lavelier backup recordings. Keeping them separate from video files but within the RAW hierarchy makes them easy to find during the sync pass.</p>
+
+      <h3>Exports/</h3>
+      <p>Rendered output files go here: rough cut exports for client review, final delivery files, compressed social media versions. Keeping exports separate from raw media prevents any possibility of confusing a re-encoded file with an original.</p>
+
+      <h3>Notes/</h3>
+      <p>Documentation about the shoot: the shot list, take notes, any problems encountered, anything the editor should know. A plain text file or PDF. More on this below.</p>
+
+      <div class="callout callout-important">
+        <div class="callout-title">Important</div>
+        <p>Never format a card until you have verified the backup. The workflow is: copy to primary drive → verify copy → copy to backup drive → verify backup → format card. Skipping verification or formatting before completing both copies is how footage is permanently lost. A card format is irreversible.</p>
+      </div>
+
+      <h2>The Notes File</h2>
+      <p>A notes file is a simple document included with the media handoff that gives the editor context they cannot get from watching the footage alone. It does not need to be elaborate — a plain text file is sufficient — but it should include:</p>
+
+      <ul>
+        <li><strong>Shot list with clip references</strong> — Which clips correspond to which shots. "Staff interview B-roll: Camera A clips 0031–0048."</li>
+        <li><strong>Take notes</strong> — Which takes are the best. "R02_0012 is the preferred take of the opening statement. R02_0010 and R02_0011 had stumbles."</li>
+        <li><strong>Technical issues</strong> — Any known problems the editor should be aware of. "Audio on Camera B clips R01_0003 through R01_0007 has slight RF noise — use Camera A reference track for sync only."</li>
+        <li><strong>Pickup needs</strong> — Anything that could not be captured and may require a second unit or pickup shoot. "No B-roll of the loading dock — mentioned in interview segment 3."</li>
+        <li><strong>Location context</strong> — Anything that explains choices made on set that might otherwise look like errors. "Interview was moved to the boardroom due to HVAC noise in the original location."</li>
+      </ul>
+
+      <div class="callout callout-note">
+        <div class="callout-title">Note</div>
+        <p>A notes file written immediately after the shoot is far more accurate than one written two days later. Capture take notes during the shoot, while the details are fresh. Even brief notes ("take 3 is best") are more useful than no notes at all.</p>
+      </div>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">A shooter delivers footage from a two-camera shoot. Both cameras used default naming and produced clips numbered 0001 through 0045. What problem will the editor encounter?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">The editing software will refuse to import files with duplicate names.</button>
+          <button class="kc-option" data-correct="true">The editor cannot tell which clips came from which camera without opening each file individually to check its metadata.</button>
+          <button class="kc-option" data-correct="false">The clips from both cameras will automatically be combined into a single sequence by the editing software.</button>
+          <button class="kc-option" data-correct="false">Default file names cause frame rate conflicts during import.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <h2>Delivering to Shared Storage</h2>
+      <p>On larger productions, media may be delivered to a shared network drive or server rather than a personal drive. When this is the case, several additional checks apply:</p>
+
+      <ul>
+        <li><strong>Confirm the destination</strong> — Get the exact folder path in writing from the producer or post coordinator. Do not guess or approximate.</li>
+        <li><strong>Confirm the naming convention</strong> — Shared storage environments often have established naming standards. Match them exactly, even if they differ from your personal preference.</li>
+        <li><strong>Verify the transfer completed</strong> — Do not assume a file copy to a network drive succeeded. Compare file counts and total sizes between source and destination.</li>
+        <li><strong>Confirm backup exists</strong> — On shared storage, ask who is responsible for backup and confirm it has been performed before formatting cards.</li>
+      </ul>
+
+      <h2>If Footage Is Misnamed After Delivery</h2>
+      <p>If you realize footage was misnamed or misorganized after handing off to the editor, notify them immediately. Do not silently rename or reorganize files in a project folder the editor has already begun working with — this breaks links in the edit project and can cause significant problems. Communicate the issue, describe what needs to change, and coordinate the fix with them so they can update their project accordingly.</p>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">What information should a good post-shoot notes file include?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">Only the camera settings used during the shoot, for the editor's reference.</button>
+          <button class="kc-option" data-correct="false">A full transcript of all interview dialogue, time-coded to each clip.</button>
+          <button class="kc-option" data-correct="true">Shot list with clip references, preferred takes, known technical issues, pickup needs, and relevant location context.</button>
+          <button class="kc-option" data-correct="false">The export settings the editor should use for the final delivery.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="key-takeaways">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>Camera-generated file names communicate nothing useful; rename files before delivery using a convention that includes date, project, camera, roll, and clip number.</li>
+          <li>A logical folder hierarchy (RAW → Camera_A, Camera_B, Audio; Exports; Notes) keeps raw media, working files, and documentation cleanly separated.</li>
+          <li>The RAW folder is the archive — never modify, rearrange, or delete from it after delivery.</li>
+          <li>A notes file gives the editor context they cannot get from the footage alone: preferred takes, technical issues, pickup needs, and location context.</li>
+          <li>Never format a card before verifying that the backup copy is complete and intact.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-nav" id="lesson-nav"></div>
+    </main>
+  </div>
+</div>
+<script src="../../js/course.js"></script>
+</body>
+</html>

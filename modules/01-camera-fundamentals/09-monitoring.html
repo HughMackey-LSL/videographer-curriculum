@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoring Exposure and Focus | Videography Fundamentals</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../../index.html">Videography Fundamentals</a>
+      <div class="sidebar-course-title">Field Production Training</div>
+    </div>
+    <div class="sidebar-progress-bar-wrap">
+      <div class="sidebar-progress-label">Your Progress</div>
+      <div class="sidebar-progress-bar">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="sidebar-progress-count" id="sidebar-progress-count"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+  <div class="main-wrapper">
+    <header class="top-bar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+    </header>
+    <main class="content">
+
+      <div class="lesson-header">
+        <div class="module-tag">Module 1 · Lesson 9</div>
+        <h1>Monitoring Exposure and Focus</h1>
+        <div class="lesson-meta">
+          <span>~12 min read</span>
+          <span>5 objectives</span>
+        </div>
+      </div>
+
+      <div class="objectives-box">
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Read a histogram and understand what an ideal exposure distribution looks like.</li>
+          <li>Use zebras to identify overexposure and set appropriate thresholds for skin tones.</li>
+          <li>Interpret a waveform monitor to evaluate luminance across the frame.</li>
+          <li>Understand false color and how to use it to judge skin exposure.</li>
+          <li>Monitor focus reliably in field conditions including bright sunlight.</li>
+        </ul>
+      </div>
+
+      <h2>Why You Cannot Trust Your Eyes Alone</h2>
+      <p>The human visual system is remarkably adaptable. Your eyes constantly adjust to brightness — what looks well-exposed under the shade of a tree may be completely different when viewed on a calibrated monitor in a dark editing suite. Your camera's LCD screen is also unreliable on its own: it is affected by ambient light, and the auto-brightness on most screens can make underexposed footage look bright enough in sunlight. Relying on how the image looks to your eye, on a small screen, in variable lighting, is one of the most common causes of exposure errors in field production.</p>
+
+      <p>Professional exposure monitoring tools — histogram, zebras, waveform, and false color — give you objective measurements of the image brightness that are independent of the screen you are looking at or the ambient light around you. Learning to use them is what separates confident, reliable exposure control from guesswork.</p>
+
+      <h2>The Histogram</h2>
+      <p>The histogram is a graph that shows the distribution of pixel brightness values in the current frame, from pure black on the left edge to pure white on the right edge. The height of the graph at any point represents how many pixels are at that brightness level. A tall spike on the far left means many pixels are at pure black (crushed shadows). A tall spike on the far right means many pixels are at pure white (clipped highlights).</p>
+
+      <p>For a typical interview or documentary shot, you want the histogram to show a roughly central distribution — most of the brightness values in the middle range, without a significant spike at either extreme edge. Some information on the left (shadows are present) and some approaching the right (bright areas in the frame) is normal and expected. What you are avoiding is any spike that presses hard against either wall — that signals that you are losing detail to clipping.</p>
+
+      <p>For outdoor shots with sky, you will almost always have some content approaching the right edge — sky is bright. The question is whether that sky clips to pure white (no detail in the clouds) or retains some texture. A histogram with a clean distribution that stops just before the right wall tells you that the brightest parts of the frame are bright but not lost.</p>
+
+      <div class="callout callout-important">
+        <div class="callout-title">Important</div>
+        <p>Overexposure is worse than underexposure in digital video. Clipped highlights — pixels that have hit the maximum recordable brightness — become pure white with no detail, and that information is permanently gone and cannot be recovered in post-production. Slightly underexposed footage can often be lifted in grading to a usable state. When in doubt, expose slightly to protect the highlights.</p>
+      </div>
+
+      <h2>Zebras</h2>
+      <p>Zebras are a display overlay that covers any pixels above a specified brightness threshold with a diagonal stripe pattern — making it immediately obvious at a glance which parts of the frame are approaching or exceeding a particular exposure level. Unlike the histogram (which tells you the overall distribution), zebras show you exactly where in the frame the problem is occurring.</p>
+
+      <p>Most cameras allow you to set the zebra threshold at any level from about 70 IRE to 100 IRE (IRE is a unit of video brightness where 0 is black and 100 is maximum white). Two common thresholds have specific practical uses:</p>
+
+      <p><strong>70–75 IRE for skin tones</strong> — Set zebras at this level to confirm that your subject's face is at the correct exposure for skin. When caucasian skin in proper light shows the zebra pattern just starting to appear on the brightest parts of the forehead and cheeks, you are in the correct exposure range for that skin tone. Different skin tones expose at different IRE values, but the principle of using a known-correct threshold as a calibration reference applies across all subjects.</p>
+
+      <p><strong>95–100 IRE for clipping warning</strong> — Set zebras at this level to warn you when any area in the frame is about to clip. The stripes appear on highlights before they go pure white, giving you a few stops of warning to pull back exposure before you lose the detail entirely.</p>
+
+      <div class="callout callout-tip">
+        <div class="callout-title">Tip</div>
+        <p>You can use zebras at two different sensitivity levels on the same camera if it supports dual zebra settings. Configure one at 75 IRE for skin tone monitoring and one at 95 IRE for clipping protection, and switch between them as needed during the shoot.</p>
+      </div>
+
+      <h2>Waveform Monitor</h2>
+      <p>The waveform monitor displays the luminance (brightness) values of every column of pixels in the frame, plotted vertically from black (0 IRE, bottom) to white (100 IRE, top). It is like a histogram rotated 90 degrees and stretched across the width of the frame — instead of showing you the total count at each brightness, it shows you where in the frame left to right those brightness values are located.</p>
+
+      <p>This spatial information is valuable for checking the overall tonal balance of the frame. If the left third of the waveform (corresponding to the left of the frame) shows values hovering around 50 IRE and the right third shows values near 80 IRE, you know the right side of the frame is significantly brighter than the left — useful for identifying a window or practical light creating a hot spot, or for confirming that your key light is falling correctly on the subject.</p>
+
+      <p>For a correctly exposed interview, the waveform trace for the subject's face should generally sit between 50 and 75 IRE — bright enough to be well-exposed without approaching clipping. The waveform is particularly valuable when shooting log footage, because a log image always looks flat and pale on the LCD but the waveform shows you the objective luminance values regardless of the picture profile.</p>
+
+      <h2>False Color</h2>
+      <p>False color is a display mode that replaces the normal image with a color-coded map of brightness values — each IRE range is assigned a specific color, letting you read exposure levels across the entire frame at once without reading numbers. The mapping varies by implementation, but the most common convention (used by ARRI and widely followed) assigns pink/red to the skin exposure zone (around 70–75 IRE), yellow to slightly above that, and red or bright orange to clipping.</p>
+
+      <p>When exposing an interview subject in false color, you want to see pink on the face — particularly on the brightest part of the forehead. If the face is green or blue, it is underexposed. If it is yellow or red, it is overexposed. This gives you an immediate visual reference that works even if you are not sure exactly where the histogram or waveform trace is sitting. False color is popular with solo operators and camera assistants for its speed and clarity.</p>
+
+      <h2>Overexposure: Why It Is Worse Than Underexposure</h2>
+      <p>Digital sensors record information in a linear fashion — there is a maximum threshold above which no additional detail can be recorded. When pixels reach that threshold, they clip to pure white and all tonal information is destroyed. The sky becomes a featureless white blob, a window becomes a white rectangle, a face in direct sun loses all texture. This information is completely unrecoverable in post-production.</p>
+
+      <p>Underexposure is different. A digital sensor records noise throughout its brightness range, and in a well-designed sensor the noise in slightly underexposed areas is relatively modest. Lifting an underexposed image in grading amplifies noise — but with modern cameras shooting 10-bit and beyond, the noise from a modestly underexposed image is often acceptable. One to two stops of underexposure can frequently be rescued in grading. One stop of overexposure that clips highlights cannot.</p>
+
+      <h2>Monitoring in the Field</h2>
+      <p>The LCD screen on the back of the camera is often difficult to see in bright outdoor conditions. Direct sun hitting the screen washes it out completely. Solutions include: using the electronic viewfinder (EVF) instead of the LCD — the EVF is shielded and typically much brighter; attaching a monitor hood (a rubber shade that blocks ambient light from the screen); using an external monitor with a high-brightness screen rated for sunlight readability (typically 1000+ nits); or, most practically, using the objective monitoring tools (zebras, waveform, histogram) that do not require visual judgment of the screen image.</p>
+
+      <div class="callout callout-warning">
+        <div class="callout-title">Common Mistake</div>
+        <p>Many operators check focus on the camera's LCD screen during playback in a shaded area and confirm it looks sharp — then discover in the edit suite that it was soft. The LCD screen at typical sizes and in outdoor conditions simply cannot show focus errors reliably. Always use focus peaking, magnification, or an external monitor with sufficient screen resolution to judge focus accurately in the field.</p>
+      </div>
+
+      <h3>External Monitors</h3>
+      <p>An external monitor — mounted on the camera's hot shoe or on a separate stand — provides a larger, often better-quality display for judging both exposure and focus. Monitors like the Atomos Shinobi, Small HD Focus, or Portkeys series provide waveform, histogram, false color, and focus peaking overlays in a larger screen with greater brightness than the camera's built-in LCD. For any shoot where critical exposure or focus monitoring is needed, an external monitor is a worthwhile investment.</p>
+
+      <h3>Checking Focus Before Every Shot</h3>
+      <p>Develop the habit of confirming focus at the start of every new take: enable focus magnification, punch in on the subject's eyes, confirm sharpness, return to full view, then roll. This sequence adds five seconds to your setup time and prevents the disappointment of discovering soft focus in the edit. It becomes automatic with practice and is one of the most valuable habits a solo operator can build.</p>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">You are shooting an outdoor interview and the histogram shows a large spike pressed hard against the right edge. What does this indicate and what should you do?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">The image is underexposed. Raise ISO or open the aperture to bring the histogram trace toward the center.</button>
+          <button class="kc-option" data-correct="true">Highlights are clipping — pixels are reaching the maximum recordable brightness and losing detail permanently. Reduce exposure by narrowing the aperture, adding ND filtration, or lowering ISO.</button>
+          <button class="kc-option" data-correct="false">The shutter speed is too fast. Slow it down to reduce the spike on the right.</button>
+          <button class="kc-option" data-correct="false">The white balance is incorrect. Correct the color temperature to move the histogram back to center.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">In the ARRI false color convention, what does a pink/magenta tone on a subject's face indicate?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">The subject is overexposed and the highlights are beginning to clip.</button>
+          <button class="kc-option" data-correct="false">The white balance is set incorrectly for the current lighting conditions.</button>
+          <button class="kc-option" data-correct="true">The subject's face is at the correct exposure range for skin tones — approximately 70–75 IRE — indicating proper exposure.</button>
+          <button class="kc-option" data-correct="false">The image is underexposed and needs to be brightened by 2–3 stops.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="key-takeaways">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>The camera LCD and your eyes alone are unreliable for accurate exposure judgment in variable field conditions. Use objective monitoring tools.</li>
+          <li>The histogram shows the overall distribution of brightness values — avoid spikes pressed against the right (clipping) or left (crushed black) edges.</li>
+          <li>Zebras show you where in the frame specific brightness thresholds are occurring. Use 70–75 IRE for skin tone reference and 95–100 IRE for clipping warning.</li>
+          <li>The waveform monitor shows luminance values mapped across the width of the frame, giving spatial context that a histogram does not.</li>
+          <li>Overexposed highlights that clip are permanently unrecoverable. When in doubt, protect the highlights and accept slightly darker shadows.</li>
+          <li>Check focus with magnification before every take, and use an external monitor or EVF in bright outdoor conditions where the LCD is unreliable.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-nav" id="lesson-nav"></div>
+    </main>
+  </div>
+</div>
+<script src="../../js/course.js"></script>
+</body>
+</html>

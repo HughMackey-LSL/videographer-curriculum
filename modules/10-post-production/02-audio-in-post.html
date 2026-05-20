@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio in Post-Production | Videography Fundamentals</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../../index.html">Videography Fundamentals</a>
+      <div class="sidebar-course-title">Field Production Training</div>
+    </div>
+    <div class="sidebar-progress-bar-wrap">
+      <div class="sidebar-progress-label">Your Progress</div>
+      <div class="sidebar-progress-bar">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="sidebar-progress-count" id="sidebar-progress-count"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+  <div class="main-wrapper">
+    <header class="top-bar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+    </header>
+    <main class="content">
+      <div class="lesson-header">
+        <div class="module-tag">Module 10 · Lesson 2</div>
+        <h1>Audio in Post-Production</h1>
+        <div class="lesson-meta"><span>~9 min read</span><span>4 objectives</span></div>
+      </div>
+
+      <div class="objectives-box">
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Identify what audio problems can and cannot be fixed in post-production.</li>
+          <li>Understand how editors sync dual-system audio and why a clean slate clap helps.</li>
+          <li>Explain the purpose of room tone in an edited timeline.</li>
+          <li>Describe the editor's audio toolkit and its limitations.</li>
+        </ul>
+      </div>
+
+      <h2>The Axiom Every Editor Knows</h2>
+      <p>There is a saying in post-production that every editor has repeated: "You can fix it in post" is almost always wrong. Nowhere is this truer than with audio. Viewers will tolerate imperfect visuals — shaky handheld footage, a slightly soft focus — far more readily than they will tolerate poor audio. Bad audio makes content unwatchable in a way that bad video rarely does. And unlike video problems, audio problems are harder to conceal, not easier.</p>
+
+      <p>Understanding what editors can and cannot do with audio in post will change how seriously you treat sound on set. The answer, in short: they can help a little. They cannot perform miracles. The responsibility for clean audio sits with the shooter and the sound recordist.</p>
+
+      <h2>The Editor's Audio Toolkit</h2>
+      <p>Professional editing software includes a suite of audio tools. Understanding what each does — and what it cannot do — is essential context for every shooter.</p>
+
+      <h3>Noise Reduction</h3>
+      <p>Noise reduction algorithms analyze a recording and attempt to identify and subtract consistent background noise. They work reasonably well on steady, low-level noise: an HVAC system rumbling in the background, the hum of fluorescent lighting, a consistent fan. The algorithm "learns" the noise profile and subtracts it from the signal.</p>
+
+      <p>What noise reduction cannot do: fix noise that is inconsistent, changes pitch, or competes directly with the dialogue in frequency. RF interference (the crackling from a wireless mic near a Wi-Fi router or mobile phone) is erratic and cannot be learned. A crowd of people talking in the background occupies the same frequency range as dialogue — you cannot remove one without affecting the other. Noise reduction applied too aggressively also produces artifacts: a "bubbling" or "warbling" quality that sounds worse than the original noise.</p>
+
+      <h3>EQ (Equalization)</h3>
+      <p>EQ allows editors to boost or reduce specific frequency ranges. It can reduce low-frequency rumble (the deep thud from footsteps or HVAC), roll off high-frequency harshness, or add presence to a voice that sounds thin and distant. Used well, EQ is a powerful shaping tool. Used aggressively to fix a fundamentally bad recording, it often makes things worse by introducing tonal imbalance or amplifying noise alongside the dialogue.</p>
+
+      <h3>Compression</h3>
+      <p>Audio compression (not to be confused with file compression) reduces the dynamic range of a recording: it brings loud peaks down and raises quiet passages up, evening out level variations. This is useful when a subject moves toward and away from the microphone, or when their voice fluctuates dramatically in volume. A well-compressed track sounds consistent and controlled.</p>
+
+      <p>Compression cannot fix clipping. If the signal exceeded 0 dBFS — the maximum the recorder can store — the peaks are distorted, and compression applied to that signal will make the distortion more audible, not less.</p>
+
+      <div class="callout callout-important">
+        <div class="callout-title">Important</div>
+        <p>Clipped audio is permanent. When a waveform peaks above 0 dBFS, the recorder cannot store the true peak — it stores the maximum value instead, creating flat-topped waveforms and a harsh, crackling distortion. This cannot be undone in post. The only option is a reshoot or, if available, a backup track recorded at a lower level. Always record with headroom.</p>
+      </div>
+
+      <h2>What Can Be Fixed — and What Cannot</h2>
+
+      <h3>Can Be Fixed (with effort)</h3>
+      <ul>
+        <li><strong>Mild steady background noise</strong> — HVAC, fluorescent hum, distant traffic. Noise reduction can attenuate it usefully.</li>
+        <li><strong>Mouth clicks and breaths</strong> — Editors can manually identify and reduce these using volume automation or clip gain.</li>
+        <li><strong>Level variations</strong> — Compression and manual level adjustment can even out a track where the subject varied in volume.</li>
+        <li><strong>Low-frequency rumble</strong> — A high-pass filter removes most rumble from handling noise or wind below the speech frequencies.</li>
+      </ul>
+
+      <h3>Cannot Be Fixed</h3>
+      <ul>
+        <li><strong>Clipped audio</strong> — Distorted peaks are a permanent artifact of exceeding the recorder's maximum input level.</li>
+        <li><strong>Severe RF interference</strong> — Erratic crackling from wireless interference cannot be cleanly separated from dialogue.</li>
+        <li><strong>Dialogue buried in crowd noise</strong> — When background noise is at or above the dialogue level, they cannot be separated.</li>
+        <li><strong>Recording with no microphone</strong> — Camera body audio in a noisy environment is often unusable for finished work.</li>
+      </ul>
+
+      <div class="callout callout-warning">
+        <div class="callout-title">Common Mistake</div>
+        <p>Assuming that because a wireless microphone is transmitting, it is transmitting cleanly. RF interference from mobile phones, Wi-Fi routers, or other wireless devices nearby can corrupt a wireless signal intermittently — sometimes producing clean audio for minutes before suddenly bursting into crackling. Monitor through headphones throughout the recording, not just at the start.</p>
+      </div>
+
+      <h2>Dual-System Audio Syncing</h2>
+      <p>In many professional shoots, audio is recorded separately from video: a dedicated audio recorder captures the sound while the camera records a reference track. This is called dual-system audio. The editor must synchronize the clean recorder audio with the camera video during post.</p>
+
+      <p>The traditional tool for this is the slate clap: a sharp, loud crack of the clapperboard immediately before recording begins. The clap creates a distinctive spike in both the camera audio and the recorder audio — a single clear transient that both waveforms share. The editor aligns the two spikes, and sync is established.</p>
+
+      <p>Modern editing software can sync dual-system audio automatically using waveform analysis: it finds the common audio pattern in both tracks and aligns them. This works well when the camera microphone captured enough ambient sound. A single clap makes this analysis faster and more reliable. Multiple takes, a consistent clap at the start of each, and clearly labeled recorder files make the editor's sync pass straightforward. No clap, ambiguous takes, and unlabeled files make it tedious and error-prone.</p>
+
+      <div class="callout callout-tip">
+        <div class="callout-title">Tip</div>
+        <p>When slating, make the clap sharp and decisive. A slow or muffled clap produces a gradual waveform peak that is harder to align precisely. Hold the slate in frame for a moment before the clap so the editor can read the scene and take information. Call out the scene and take number audibly before closing the sticks.</p>
+      </div>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">An interview subject occasionally speaks too softly, making their level drop significantly compared to other moments in the recording. Which audio tool is best suited to even out these level variations in post?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">Noise reduction, which can identify and boost the quiet passages.</button>
+          <button class="kc-option" data-correct="false">EQ, which can increase the frequency range of the voice overall.</button>
+          <button class="kc-option" data-correct="true">Compression, which reduces dynamic range by bringing loud peaks down and raising quiet passages up.</button>
+          <button class="kc-option" data-correct="false">A high-pass filter, which removes low-frequency rumble and thereby makes voices more intelligible.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <h2>Room Tone in the Edit</h2>
+      <p>Room tone — the 30 to 60 seconds of ambient sound you record in every location before striking the setup — serves a specific and critical function in post-production. Understanding this function explains why recording it is non-negotiable.</p>
+
+      <p>Every edit cut between two dialogue clips creates a potential audio discontinuity. The ambience of a room changes slightly when microphone position changes, when subjects shift, or simply between different takes. When two audio clips are cut together, these subtle ambience differences can create an audible "thump" or "click" at the edit point — a distraction that tells the viewer they are watching an edited production.</p>
+
+      <p>Editors smooth these transitions by laying a continuous bed of room tone underneath the dialogue track. The room tone fills gaps between words and clips, providing a consistent ambient baseline that masks the discontinuities. Without room tone from the actual recording location, the editor must either leave the clicks audible, borrow ambience from elsewhere in the recording (which may not match exactly), or use a generic noise bed (which rarely sounds right).</p>
+
+      <p>Room tone from the actual space, recorded immediately after the take, is the best possible material for this purpose. It has the exact acoustic signature of that room, at that time, with those people present. Recording it takes 30 seconds and costs nothing. Not recording it costs the editor hours and the finished piece quality.</p>
+
+      <h2>Audio Tracks in the Timeline</h2>
+      <p>A finished audio mix is not a single track — it is many layers stacked and balanced together. Dialogue sits on its own tracks. Music sits on separate tracks. Sound effects and ambient sound fill additional tracks. The editor adjusts the relative level of each layer to create a balanced, intelligible mix.</p>
+
+      <p>This layered structure is why clean separation between audio elements during recording matters. A dialogue recording that also contains prominent music bleed (a speaker playing in the same room) cannot be cleanly separated — the music is baked into the dialogue track. The editor cannot lower the music without lowering the dialogue. A clean dialogue recording with no music bleed gives the editor full control to mix music and dialogue at any desired balance.</p>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">An editor is cutting together a three-minute interview and notices a subtle "thump" at several edit points where the ambient sound changes between cuts. What production material would allow them to smooth these transitions?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">A backup wireless microphone recording from the same session.</button>
+          <button class="kc-option" data-correct="true">Room tone recorded in the same location immediately after the interview.</button>
+          <button class="kc-option" data-correct="false">Noise reduction applied across the full dialogue track.</button>
+          <button class="kc-option" data-correct="false">EQ to match the frequency profile of each individual clip.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="key-takeaways">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>Noise reduction, EQ, and compression can improve minor audio problems — but they cannot fix clipped audio, severe RF interference, or dialogue buried in crowd noise.</li>
+          <li>Clipped audio is a permanent artifact: once the signal exceeds 0 dBFS, the distortion cannot be removed in post.</li>
+          <li>A sharp, decisive slate clap gives editors a clear sync point when aligning dual-system audio with camera video.</li>
+          <li>Room tone from the recording location is used as an ambient bed under dialogue tracks to smooth edit transitions — always record 30 seconds of it.</li>
+          <li>Audio elements recorded separately (dialogue free of music bleed, clean ambient recording) give editors maximum control in the mix.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-nav" id="lesson-nav"></div>
+    </main>
+  </div>
+</div>
+<script src="../../js/course.js"></script>
+</body>
+</html>

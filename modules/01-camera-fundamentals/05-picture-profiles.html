@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picture Profiles and Log | Videography Fundamentals</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../../index.html">Videography Fundamentals</a>
+      <div class="sidebar-course-title">Field Production Training</div>
+    </div>
+    <div class="sidebar-progress-bar-wrap">
+      <div class="sidebar-progress-label">Your Progress</div>
+      <div class="sidebar-progress-bar">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="sidebar-progress-count" id="sidebar-progress-count"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+  <div class="main-wrapper">
+    <header class="top-bar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+    </header>
+    <main class="content">
+
+      <div class="lesson-header">
+        <div class="module-tag">Module 1 · Lesson 5</div>
+        <h1>Picture Profiles and Log</h1>
+        <div class="lesson-meta">
+          <span>~11 min read</span>
+          <span>5 objectives</span>
+        </div>
+      </div>
+
+      <div class="objectives-box">
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Explain what picture profiles are and how they affect the recorded image.</li>
+          <li>Describe what a standard (Rec.709) profile looks like and when to use it.</li>
+          <li>Explain why log gamma exists and what it does to the image.</li>
+          <li>Understand the risks of shooting log without proper monitoring tools.</li>
+          <li>Make an informed decision about when to shoot log versus standard for any given project.</li>
+        </ul>
+      </div>
+
+      <h2>What Is a Picture Profile?</h2>
+      <p>A picture profile (sometimes called a creative style, color profile, or film simulation depending on the camera brand) is a set of in-camera settings that determines how the sensor data is processed and encoded into the recorded file. It controls the tonal curve (how brightness is mapped from shadows to highlights), color saturation, sharpness, and noise reduction applied to the image before it is compressed and written to the card.</p>
+
+      <p>Picture profiles matter because they determine how much visual information is preserved in the recording, how the footage will look straight out of camera, and how much flexibility you will have when you color grade in post-production. Choosing the wrong profile for your workflow can make post-production significantly harder — or make on-set monitoring confusing and unreliable.</p>
+
+      <h2>Standard Profiles (Rec.709)</h2>
+      <p>The standard color space for broadcast television and web video delivery is Rec.709 — a specification that defines a specific set of primary colors, white point, and gamma curve. When your camera is set to a standard picture profile (Sony's "Standard," Canon's "Standard" or "Neutral," Panasonic's "Standard"), it is encoding the image in a form designed to look correct and finished when viewed on a calibrated display.</p>
+
+      <p>What this means practically: what you see on the camera's LCD monitor during the shoot is very close to what viewers will see on their screens. The image has normal contrast, normal saturation, and accurate colors without any additional processing. This is called "what you see is what you get" (WYSIWYG) recording — a significant advantage for operators who are new to color grading, working under time pressure, or delivering footage that will receive minimal post-processing.</p>
+
+      <p>The limitation of standard profiles is dynamic range. The camera's sensor can capture a wider range of brightness — from very dark shadows to very bright highlights — than the Rec.709 curve can record. To fit the image into the Rec.709 container, the camera's processor clips highlights that are above a certain brightness threshold (they become pure white, losing all detail) and crushes shadows below a certain threshold (they become pure black). You are trading dynamic range for a ready-to-use image.</p>
+
+      <div class="callout callout-note">
+        <div class="callout-title">Note</div>
+        <p>Even within standard profiles, you can adjust parameters like contrast, saturation, and sharpness. Many professionals slightly reduce contrast and saturation in their standard profile — a setting sometimes called a "neutral" or "flat" standard — to retain a little more shadow and highlight detail while still producing an image that needs minimal grading. This is a good middle-ground approach for most institutional work.</p>
+      </div>
+
+      <h2>Log Gamma Explained</h2>
+      <p>Log gamma (short for logarithmic gamma) is a fundamentally different approach to recording. Instead of mapping sensor data into a display-ready curve, log captures data using a mathematical logarithmic function that compresses bright highlights and lifts dark shadows — fitting a much wider range of brightness information into the same digital container. The result is an image with washed-out, flat, low-contrast, low-saturation appearance that looks severely wrong on any normal display.</p>
+
+      <p>That strange-looking image is intentional. The log file contains significantly more tonal information than a standard recording — detail in highlights that would have been clipped, detail in shadows that would have been crushed. In a color grading application, the colorist applies a transform (called a LUT, or Look-Up Table) that maps the log image back into a display color space, and the footage suddenly has vibrant colors, normal contrast, and rich detail in both highlights and shadows simultaneously. The flat recording is a preservation strategy — a way of saving data that would otherwise be discarded by the camera.</p>
+
+      <p>Common log formats by manufacturer include Sony's S-Log2 and S-Log3, Canon's C-Log and C-Log3, Panasonic's V-Log, and ARRI's Log-C. Each uses a slightly different curve and has a specific LUT (or set of LUTs) associated with it. They all accomplish the same basic goal — preserving dynamic range — but they are not interchangeable. Using the wrong LUT for a given log format will produce incorrect colors.</p>
+
+      <table class="def-table">
+        <thead><tr><th>Log Format</th><th>Manufacturer</th><th>Cameras</th></tr></thead>
+        <tbody>
+          <tr><td>S-Log2 / S-Log3</td><td>Sony</td><td>A7S, FX3, FX6, FX9, Venice</td></tr>
+          <tr><td>C-Log / C-Log3</td><td>Canon</td><td>EOS R5, C70, C300, C500</td></tr>
+          <tr><td>V-Log</td><td>Panasonic</td><td>GH6, S5, EVA1, VariCam</td></tr>
+          <tr><td>Log-C</td><td>ARRI</td><td>Alexa, Amira, Mini LF</td></tr>
+        </tbody>
+      </table>
+
+      <h2>The Challenge of Log on Set</h2>
+      <p>The practical problem with log is that it looks terrible on the camera monitor. The washed-out, pale image makes it very hard to judge exposure, skin tones, or background contrast accurately. An operator shooting log without proper monitoring tools can easily misjudge exposure — thinking the image looks slightly underexposed and brightening it, when in fact the image was correct and they just overexposed the highlights beyond recovery.</p>
+
+      <p>The professional solution is to apply a monitoring LUT — a preview transform loaded onto the camera's monitor output or an external display — that shows you a Rec.709 version of the image for evaluating the scene, while the camera continues to record the flat log data to the card. This gives you the best of both worlds: an image you can judge on set, combined with the maximum dynamic range in the recorded file. However, setting this up correctly requires knowledge and careful configuration. Getting it wrong is worse than not using log at all.</p>
+
+      <div class="callout callout-warning">
+        <div class="callout-title">Common Mistake</div>
+        <p>A common mistake among beginners learning about log: they see the flat, pale image on the camera monitor and assume it needs to be brighter, so they overexpose. Overexposed log footage loses highlight detail that cannot be recovered in post — defeating the entire purpose of shooting log. If you are shooting log without a monitoring LUT, the flat image is supposed to look that way. Trust your waveform or histogram, not your eyes alone.</p>
+      </div>
+
+      <h2>When to Shoot Log — and When Not To</h2>
+      <p>Log is appropriate when you have a color grading step in your post-production workflow, when the lighting conditions have high contrast (bright windows, outdoor sun), when you want maximum flexibility to adjust the look in the edit, and when you are recording in 10-bit to support the additional data. Cinema productions, narrative projects, and high-production corporate videos often shoot log for exactly these reasons.</p>
+
+      <p>Log is not appropriate when you have no grading pipeline — if the footage will go from camera to edit with minimal color work, log footage will look wrong and flat in the final delivery. It is also inappropriate when you have no monitoring LUT configured, when you are working alone and cannot focus on both operating and technical monitoring simultaneously, or when the project timeline is too compressed to allow a proper color grade. In these cases, a well-configured standard profile will produce a better final result than mismanaged log.</p>
+
+      <div class="callout callout-tip">
+        <div class="callout-title">Tip</div>
+        <p>The professional recommendation for anyone learning video production: use a standard picture profile with slightly reduced contrast and saturation until you have a full grading workflow in place. Learn to expose correctly, match color temperature, and deliver clean standard footage first. Adding log to an already complex workflow before you have mastered the basics will create more problems than it solves.</p>
+      </div>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">You are recording an interview with a bright window in the background. You want maximum flexibility to balance the subject and the background in post-production. Which picture profile approach would be most appropriate, assuming you have a 10-bit recording option and a monitoring LUT configured?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">Standard (Rec.709), because it produces a finished image directly from the camera.</button>
+          <button class="kc-option" data-correct="true">Log (S-Log, C-Log, or equivalent), because it preserves more highlight and shadow detail simultaneously, giving the colorist more flexibility to balance the exposure in post.</button>
+          <button class="kc-option" data-correct="false">Black and white, to eliminate color balance concerns entirely.</button>
+          <button class="kc-option" data-correct="false">The highest saturation profile available, to make colors pop immediately.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">What is the purpose of a monitoring LUT when shooting log footage?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">It converts the recorded file from log to Rec.709 so no grading is needed later.</button>
+          <button class="kc-option" data-correct="false">It reduces file size by compressing the log data during recording.</button>
+          <button class="kc-option" data-correct="true">It displays a Rec.709-corrected preview on the monitor so the operator can judge exposure and color accurately, while the camera still records the flat log data to the card.</button>
+          <button class="kc-option" data-correct="false">It automatically adjusts exposure to keep the log image at the correct brightness level.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="key-takeaways">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>Picture profiles control how the camera processes and encodes sensor data — they affect tonal curve, color, contrast, and how much dynamic range is preserved.</li>
+          <li>Standard (Rec.709) profiles produce a finished, display-ready image with accurate colors and contrast. What you see on the monitor is close to what the audience sees.</li>
+          <li>Log gamma profiles preserve significantly more highlight and shadow detail by encoding data on a flat, washed-out curve — designed for color grading, not direct viewing.</li>
+          <li>Log footage requires a monitoring LUT to judge exposure and color on set, a 10-bit recording format, and a color grading step in post-production.</li>
+          <li>Use standard profiles until you have a complete grading workflow in place. Log poorly managed is worse than a clean standard recording.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-nav" id="lesson-nav"></div>
+    </main>
+  </div>
+</div>
+<script src="../../js/course.js"></script>
+</body>
+</html>

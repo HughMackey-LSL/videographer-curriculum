@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 10 Quiz | Videography Fundamentals</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../../index.html">Videography Fundamentals</a>
+      <div class="sidebar-course-title">Field Production Training</div>
+    </div>
+    <div class="sidebar-progress-bar-wrap">
+      <div class="sidebar-progress-label">Your Progress</div>
+      <div class="sidebar-progress-bar">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="sidebar-progress-count" id="sidebar-progress-count"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+  <div class="main-wrapper">
+    <header class="top-bar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+    </header>
+    <main class="content">
+      <div class="lesson-header">
+        <div class="module-tag">Module 10</div>
+        <h1>Post-Production Awareness Quiz</h1>
+        <div class="lesson-meta"><span>10 questions</span><span>Pass: 70%</span></div>
+      </div>
+      <p>Answer all 10 questions, then submit to see your score.</p>
+      <div id="module-quiz">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:0%"></div></div>
+        <div class="quiz-progress-label">0 of 10 answered</div>
+
+        <!-- Question 1 -->
+        <div class="quiz-question" data-correct="2">
+          <p class="quiz-q-text">1. A two-camera shoot delivers footage where Camera A recorded at 23.976 fps and Camera B recorded at 29.97 fps. What is the most accurate description of why this is a problem for the editor?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">The different frame rates will cause Camera B clips to appear in black and white on the timeline.</button>
+            <button class="quiz-option">Editing software cannot import clips recorded at different frame rates in the same project.</button>
+            <button class="quiz-option">The editor must retime every mismatched clip to fit the timeline frame rate, which can introduce motion artifacts and costs significant editing time.</button>
+            <button class="quiz-option">Frame rate differences only affect slow-motion clips and will not impact standard-speed interview footage.</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="quiz-question" data-correct="1">
+          <p class="quiz-q-text">2. An editor applies a stylized warm-orange look to a finished interview. The footage was first balanced for accurate skin tones and consistent exposure across all camera angles. Which term describes the creative step of applying the stylized look?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">Color correction, which fixes technical problems and establishes the warm-orange look simultaneously.</button>
+            <button class="quiz-option">Color grading, which builds a creative look on top of technically corrected footage.</button>
+            <button class="quiz-option">White balance adjustment, which shifts the overall color temperature of the image.</button>
+            <button class="quiz-option">Log normalization, which converts flat log footage to a viewable color space.</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="quiz-question" data-correct="0">
+          <p class="quiz-q-text">3. During a critical interview, the subject raised their voice on an important answer. The audio waveform shows flat-topped peaks on that section. Why can this not be repaired in post-production?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">Flat-topped waveform peaks indicate the signal exceeded 0 dBFS — the recorder stored the maximum value instead of the true peak, creating permanent distortion that cannot be reconstructed.</button>
+            <button class="quiz-option">Post-production noise reduction tools only work on consistent background noise, not on loud dialogue peaks.</button>
+            <button class="quiz-option">Editing software compresses audio during import, which permanently destroys loud peaks before the editor can access them.</button>
+            <button class="quiz-option">The distortion can be repaired, but only by re-recording the subject reading the same line in an ADR session.</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="quiz-question" data-correct="3">
+          <p class="quiz-q-text">4. An editor is smoothing transitions between dialogue clips and needs a consistent ambient bed to paste under the cuts. What production recording is specifically intended for this purpose?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">The camera reference track, which captures all ambient sound throughout the entire shoot.</button>
+            <button class="quiz-option">A generic noise bed from a sound effects library that matches the approximate character of the location.</button>
+            <button class="quiz-option">The wireless microphone recording, which picks up ambient sound from close to the subject.</button>
+            <button class="quiz-option">Room tone — 30 to 60 seconds of silence recorded in the exact location immediately after dialogue recording.</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="quiz-question" data-correct="1">
+          <p class="quiz-q-text">5. A shooter delivers footage recorded in H.264 from a mirrorless camera. The editor reports that playback stutters on their edit workstation. What is the most likely technical explanation for this?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">H.264 files are too large for the workstation's storage drive to read in real time.</button>
+            <button class="quiz-option">H.264 uses inter-frame compression that is computationally expensive to decode during playback, placing heavy load on the CPU.</button>
+            <button class="quiz-option">H.264 is incompatible with professional editing software and must be converted before import.</button>
+            <button class="quiz-option">H.264 records at a higher bit depth than ProRes, requiring more processing power per frame.</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="quiz-question" data-correct="2">
+          <p class="quiz-q-text">6. A clip is named <strong>20240821_ProductLaunch_B_R02_0047.MP4</strong>. What four pieces of information does this name communicate to the editor without opening the file?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">The clip's duration, the subject's name, the recording format, and the editor's initials.</button>
+            <button class="quiz-option">The camera model, the recording resolution, the project client, and the export format.</button>
+            <button class="quiz-option">The shoot date, the project name, the camera identifier and card roll, and the sequential clip number.</button>
+            <button class="quiz-option">The location, the director's name, the lighting setup used, and the lens focal length.</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="quiz-question" data-correct="0">
+          <p class="quiz-q-text">7. A production shoots on a high-resolution, highly compressed codec that causes playback to stutter in the editing software. The editor transcodes all the footage into small, lower-quality files, edits using those, then relinks the timeline to the original high-resolution files before export. What is this workflow called?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">A proxy workflow, where lower-quality stand-in files are used for editing and then replaced with the originals at export.</button>
+            <button class="quiz-option">A transcode workflow, where the original files are permanently converted to a better editing codec before work begins.</button>
+            <button class="quiz-option">An offline-online workflow, where the editor and colorist work on separate systems that are never linked together.</button>
+            <button class="quiz-option">A roundtrip workflow, where footage is exported from the camera, processed externally, and then reimported before editing.</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="quiz-question" data-correct="3">
+          <p class="quiz-q-text">8. An editor is cutting a documentary segment. The primary subject discusses three topics in their interview, but the shooter only captured B-roll footage for two of them. What problem will the editor face when cutting the third topic?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">The third topic section cannot be included in the final edit because it has no corresponding B-roll.</button>
+            <button class="quiz-option">The editor can use stock footage from a library, but it must be licensed and credited in the film.</button>
+            <button class="quiz-option">The audio from the third topic will need to be re-recorded as a voiceover because it cannot be paired with visuals.</button>
+            <button class="quiz-option">The editor must hold on the talking head interview shot for the duration of the topic, with no visual variety — which tends to make that section feel flat and visually static.</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="quiz-question" data-correct="2">
+          <p class="quiz-q-text">9. Which of the following items should be included in a post-shoot notes file delivered alongside the media?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">The camera's internal settings menu screenshots and the memory card's serial number.</button>
+            <button class="quiz-option">A full word-for-word transcript of all interview dialogue, time-coded to the nearest second.</button>
+            <button class="quiz-option">Preferred take references by clip number, known technical issues, any footage gaps or pickup needs, and location context that explains on-set decisions.</button>
+            <button class="quiz-option">The final edit's desired music playlist and the client's preferred color grade reference images.</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="quiz-question" data-correct="1">
+          <p class="quiz-q-text">10. An editor wants to trim a clip to start exactly where the subject begins speaking, then add a one-second dissolve to the next clip. The clip's recording starts precisely on the first word of dialogue. Why is this a problem?</p>
+          <div class="quiz-options">
+            <button class="quiz-option">Dissolves require the two clips to have matching color profiles, which cannot be verified without extra footage at the start.</button>
+            <button class="quiz-option">A dissolve requires frames that extend beyond the clip's content — without a handle before the first word, there are no frames available to fill the incoming half of the transition.</button>
+            <button class="quiz-option">Starting a clip exactly on the first word is considered a continuity error that will confuse the viewer.</button>
+            <button class="quiz-option">The clip is technically usable but requires a jump cut rather than a dissolve, which changes the visual style of the edit.</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <div class="quiz-actions">
+          <button class="btn btn-primary" id="quiz-submit" disabled>Submit Quiz</button>
+        </div>
+      </div>
+
+      <div class="quiz-results" id="quiz-results">
+        <div class="quiz-score-circle" id="quiz-score-circle">
+          <div class="quiz-score-num" id="quiz-score-num">0/10</div>
+          <div class="quiz-score-label">Score</div>
+        </div>
+        <div class="quiz-result-msg" id="quiz-result-msg"></div>
+        <div class="quiz-result-sub" id="quiz-result-sub"></div>
+        <button class="btn btn-secondary" id="quiz-retry">Retry Quiz</button>
+      </div>
+
+      <div class="lesson-nav" id="lesson-nav"></div>
+    </main>
+  </div>
+</div>
+<script src="../../js/course.js"></script>
+</body>
+</html>

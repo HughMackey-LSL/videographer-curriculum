@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setting Levels and Monitoring | Videography Fundamentals</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../../index.html">Videography Fundamentals</a>
+      <div class="sidebar-course-title">Field Production Training</div>
+    </div>
+    <div class="sidebar-progress-bar-wrap">
+      <div class="sidebar-progress-label">Your Progress</div>
+      <div class="sidebar-progress-bar">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="sidebar-progress-count" id="sidebar-progress-count"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+  <div class="main-wrapper">
+    <header class="top-bar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+    </header>
+    <main class="content">
+
+      <div class="lesson-header">
+        <div class="module-tag">Module 3 · Lesson 4</div>
+        <h1>Setting Levels and Monitoring</h1>
+        <div class="lesson-meta">
+          <span>~9 min read</span>
+          <span>5 objectives</span>
+        </div>
+      </div>
+
+      <div class="objectives-box">
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Read audio meters and understand what VU and peak meters each display.</li>
+          <li>State the target dialogue level range in dBFS for broadcast and production contexts.</li>
+          <li>Explain why auto-gain control causes problems and how to disable it.</li>
+          <li>Describe what clipping sounds like and why it cannot be repaired in post.</li>
+          <li>Conduct a proper level check before rolling on any take.</li>
+        </ul>
+      </div>
+
+      <h2>Reading Audio Meters</h2>
+      <p>Audio meters are your primary instrument for monitoring signal level. Every camera and audio recorder displays them, and learning to read them quickly is as fundamental as learning to read a histogram for exposure. Meters show you the level of the audio signal so you can confirm it is in the right range before and during recording.</p>
+
+      <p>Digital audio equipment uses meters calibrated in dBFS — decibels relative to full scale. The most important thing to understand about dBFS is that 0 dBFS is not the target; it is the ceiling. Zero is the maximum value a digital system can represent. When a signal hits 0 dBFS, it clips — the peaks are truncated and the audio distorts in a way that cannot be repaired. On a dBFS scale, lower numbers (like -12 or -18) mean quieter; higher numbers (like -6 or -3) mean louder and closer to the ceiling.</p>
+
+      <p>Two types of meters appear on field equipment:</p>
+
+      <table class="def-table">
+        <thead><tr><th>Meter Type</th><th>What It Shows</th><th>When to Use It</th></tr></thead>
+        <tbody>
+          <tr><td>VU (Volume Unit)</td><td>Average signal level — responds slowly, gives a sense of overall loudness</td><td>Setting gain for a consistent source like music</td></tr>
+          <tr><td>Peak (PPM)</td><td>Instantaneous peak level — catches transients that VU misses</td><td>Dialogue recording, any source with dynamic peaks</td></tr>
+        </tbody>
+      </table>
+
+      <p>Most modern cameras display peak meters. When setting levels for dialogue, watch the peaks — not the average. A loud consonant, a laugh, or a sudden exclamation can spike several decibels above the average level in a fraction of a second, and a peak meter catches that while a VU meter smooths it over.</p>
+
+      <h2>Target Levels for Dialogue</h2>
+      <p>For broadcast and production work, dialogue peaks should land between -12 dBFS and -6 dBFS. This gives you enough headroom above the peaks to absorb unexpected loud moments without clipping, while keeping the signal well above the noise floor. A subject peaking at -12 dBFS is recording at a healthy level. The same subject peaking at -3 dBFS is dangerously close to clipping — one enthusiastic moment will push it over.</p>
+
+      <div class="callout callout-important">
+        <div class="callout-title">Important</div>
+        <p>When in doubt, record a bit quieter rather than a bit louder. A level that is slightly low can be amplified in post without significant quality loss, as long as the signal is well above the noise floor. A level that clips cannot be fixed. Set your peaks to the -12 dBFS range and leave headroom for surprises.</p>
+      </div>
+
+      <p>Some specific delivery targets you may encounter: broadcast television in the US typically targets -24 LUFS integrated loudness with -2 dBFS true peak. For video destined for online platforms, -14 to -16 LUFS is common. For your recording stage on set, targeting dialogue peaks around -12 dBFS gives you plenty of room to hit any of these targets in the mix.</p>
+
+      <h2>Too Quiet vs Too Loud</h2>
+      <p>Beginners sometimes treat "too quiet" and "too loud" as equally bad problems. They are not. Too quiet is a manageable problem. Too loud — specifically, clipping — is often fatal to the audio.</p>
+
+      <p>When audio is recorded too quietly, the signal sits close to the noise floor. When you raise the level in post, the noise floor rises along with the dialogue, and you hear hiss and room noise more prominently. This is a real quality hit, but it is a tradeoff — you have dialogue, it is just noisier than you would like.</p>
+
+      <p>When audio clips, the waveform is literally chopped off at the digital ceiling. The resulting distortion sounds like a harsh, crackling buzz — a "crunch" on consonants, a rasp on loud vowels. It is immediately obvious to any listener. And it cannot be undone: the information above the ceiling was never recorded. This is why setting levels conservatively and watching the peaks is always the right practice.</p>
+
+      <h2>Manual vs Auto-Gain Control</h2>
+      <p>Cameras offer two modes for managing audio input levels: manual and automatic (AGC — auto-gain control). Always use manual for production work. Always.</p>
+
+      <p>Auto-gain control analyzes the incoming audio and continuously adjusts the input gain to try to maintain a consistent level. This sounds helpful in principle. In practice, it creates a set of problems that make the audio unusable in professional contexts:</p>
+
+      <ul>
+        <li><strong>Noise pumping.</strong> During pauses in speech — when the subject takes a breath or the interviewer is thinking — AGC detects low signal and raises the gain. Room noise rushes up. When speech resumes, the gain drops. You can hear the room noise swelling and retreating behind the dialogue. This "pumping" is one of the most characteristic sounds of amateur video audio.</li>
+        <li><strong>Reaction time.</strong> AGC cannot respond instantaneously. A sudden loud sound will clip before the system has time to lower the gain.</li>
+        <li><strong>No predictability.</strong> Every take sounds different because the gain is constantly changing. This makes matching levels across cuts very difficult in post.</li>
+      </ul>
+
+      <div class="callout callout-warning">
+        <div class="callout-title">Common Mistake</div>
+        <p>Leaving AGC enabled because it seems safer is a false comfort. AGC makes bad audio sound consistently bad. Manual levels, set correctly before rolling, produce consistent, clean audio that an editor can work with. Disable AGC on every camera you use for production work and learn to set levels manually.</p>
+      </div>
+
+      <h2>Gain vs Level</h2>
+      <p>These two terms are often used interchangeably but refer to different controls. <strong>Gain</strong> is input sensitivity — how much the preamp amplifies the incoming mic signal before recording. <strong>Level</strong> (or output level) is how hot the signal is sent to the next stage or to the output. In a camera's audio section, the gain or input level knob controls how much the mic signal is amplified before it hits the analog-to-digital converter. Get this right and your recorded signal will be in the target range on the meters.</p>
+
+      <h2>Monitoring with Headphones</h2>
+      <p>Plug headphones into your camera or recorder and wear them during every take. This is non-negotiable. The audio meters show you level; headphones reveal quality. A meter can show a perfectly healthy level while the audio itself contains clothing rustle, RF interference, a buzzing wireless receiver, a subject who is holding their breath, or an air conditioner that is dominating the frequency range. None of these problems appear on a meter. All of them are immediately obvious on headphones.</p>
+
+      <p>Use closed-back headphones — they seal around the ear and let you hear the recorded signal without bleed from the room. Open-back headphones, earbuds, or listening through a camera's speaker all reduce your ability to catch problems. The headphone monitor level should be set high enough to hear clearly but not so loud that you are experiencing fatigue during a long shoot.</p>
+
+      <h2>Doing a Level Check</h2>
+      <p>Before every take, ask your subject to speak at their normal conversation level — not "testing, one, two" in a soft voice, but actually saying what they might say during the interview. Watch the meters as they speak and confirm peaks are landing in the -12 to -6 dBFS range. Listen on headphones for any quality issues. Adjust the gain if needed. This takes fifteen to thirty seconds and catches the vast majority of problems before they ruin a take.</p>
+
+      <p>If you notice levels are wrong partway through a take, do not adjust the gain while recording. A sudden level change mid-take is jarring and obvious in post and may create a bigger problem than the one you were trying to fix. Note the issue, finish the take, and correct it before the next one. If the problem is severe — the subject is clipping or completely inaudible — you can call "cut" and reset.</p>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">What target peak level range should dialogue hit on your audio meters during recording?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">0 dBFS to -3 dBFS — as hot as possible without clipping</button>
+          <button class="kc-option" data-correct="false">-30 dBFS to -20 dBFS — low enough to always have headroom</button>
+          <button class="kc-option" data-correct="true">-12 dBFS to -6 dBFS — healthy signal with headroom above the peaks for unexpected loud moments</button>
+          <button class="kc-option" data-correct="false">-3 dBFS to 0 dBFS — maximizing signal-to-noise ratio</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="knowledge-check">
+        <div class="kc-header">📝 Knowledge Check</div>
+        <p class="kc-prompt">What is "noise pumping" and what causes it?</p>
+        <div class="kc-options">
+          <button class="kc-option" data-correct="false">A pulsing noise caused by a faulty XLR cable connection.</button>
+          <button class="kc-option" data-correct="false">The sound of an air compressor cycling on and off near the recording location.</button>
+          <button class="kc-option" data-correct="true">An artifact caused by auto-gain control (AGC) raising the gain during silences and lowering it when speech resumes, making room noise swell audibly behind the dialogue.</button>
+          <button class="kc-option" data-correct="false">Distortion caused by audio peaks repeatedly hitting 0 dBFS.</button>
+        </div>
+        <div class="kc-feedback"></div>
+        <button class="kc-reset">Try again</button>
+      </div>
+
+      <div class="key-takeaways">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>Audio meters in digital equipment are calibrated in dBFS, where 0 is the ceiling — not the target. Dialogue peaks should land between -12 and -6 dBFS.</li>
+          <li>Clipped audio sounds like a harsh, crackling distortion and cannot be repaired in post. Recording too quietly is a manageable problem; clipping is not.</li>
+          <li>Disable auto-gain control on every camera used for production work. AGC causes noise pumping, cannot respond quickly to transients, and produces unpredictable results.</li>
+          <li>Headphones are mandatory during recording — they reveal quality problems (clothing rustle, interference, RF buzz) that the audio meters do not show.</li>
+          <li>Do a level check with the subject speaking at normal conversation level before every take. Never adjust gain while a take is in progress.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-nav" id="lesson-nav"></div>
+    </main>
+  </div>
+</div>
+<script src="../../js/course.js"></script>
+</body>
+</html>
