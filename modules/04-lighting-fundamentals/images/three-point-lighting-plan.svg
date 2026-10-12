@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 660" role="img" aria-labelledby="title description">
+  <title id="title">Three-point lighting: overhead placement and aim</title>
+  <desc id="description">The subject faces the camera at the bottom. The key is in front-left, 45 degrees from the camera axis, aimed at the face. A lower-output fill is in front-right and closer to the camera axis, aimed at the shadow side of the face. The back light is behind-right, aimed at the back of the head and shoulders. Each light's white front face points along its matching arrow. Arrows indicate aiming direction, not the shape or width of the beam.</desc>
+  <defs>
+    <marker id="key-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#b45309"/></marker>
+    <marker id="fill-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#1d4ed8"/></marker>
+    <marker id="back-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#15803d"/></marker>
+    <style>
+      text { font-family: system-ui, sans-serif; fill: #0f172a; font-size: 20px; }
+      .small { font-size: 15px; fill: #475569; }
+      .label { font-weight: 650; }
+    </style>
+  </defs>
+  <rect width="640" height="660" fill="#f8fafc"/>
+  <rect x="25" y="24" width="590" height="40" rx="8" fill="#e2e8f0"/>
+  <text x="320" y="51" text-anchor="middle">Background</text>
+  <text x="25" y="100" class="small">OVERHEAD VIEW</text>
+
+  <!-- A source's local +x direction is its forward aiming direction. -->
+  <!-- Key: (160,430) to subject (320,270), exactly 45 degrees from camera axis. -->
+  <path d="M160 430 296 294" fill="none" stroke="#b45309" stroke-width="4" marker-end="url(#key-arrow)"/>
+  <g transform="translate(160 430) rotate(-45)">
+    <rect x="-27" y="-42" width="27" height="84" rx="5" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <path d="M0-40V40" stroke="#fff" stroke-width="9"/>
+    <path d="M4-40V40" stroke="#b45309" stroke-width="2"/>
+  </g>
+  <text x="24" y="352" class="label">1 Key + softbox</text>
+  <text x="24" y="377" class="small">Main facial light</text>
+  <text x="24" y="399" class="small">In front, to one side</text>
+
+  <!-- Fill: aim toward the same subject from the opposite front side. -->
+  <path d="M425 455 336 298" fill="none" stroke="#1d4ed8" stroke-width="3" marker-end="url(#fill-arrow)"/>
+  <g transform="translate(425 455) rotate(-119.578)">
+    <rect x="-23" y="-39" width="23" height="78" rx="5" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+    <path d="M0-37V37" stroke="#fff" stroke-width="8"/>
+    <path d="M4-37V37" stroke="#1d4ed8" stroke-width="2"/>
+  </g>
+  <text x="486" y="387" class="label">2 Fill</text>
+  <text x="486" y="412" class="small">Lift face shadows</text>
+  <text x="486" y="434" class="small">Lower output</text>
+
+  <!-- Back light: the emitting face points down-left at the rear of the head. -->
+  <path d="M455 125 342 246" fill="none" stroke="#15803d" stroke-width="3" marker-end="url(#back-arrow)"/>
+  <g transform="translate(455 125) rotate(132.961)">
+    <rect x="-33" y="-16" width="33" height="32" rx="5" fill="#86efac" stroke="#15803d" stroke-width="2"/>
+    <path d="M0-15V15" stroke="#fff" stroke-width="7"/>
+    <path d="M4-15V15" stroke="#15803d" stroke-width="2"/>
+  </g>
+  <text x="492" y="90" class="label">3 Back light</text>
+  <text x="492" y="113" class="small">Head + shoulders</text>
+
+  <!-- Head and shoulders seen from above; nose points toward camera. -->
+  <ellipse cx="320" cy="265" rx="60" ry="16" fill="#cbd5e1"/>
+  <circle cx="320" cy="270" r="32" fill="#334155"/>
+  <path d="M313 296 320 310 327 296Z" fill="#fff" stroke="#334155" stroke-width="2"/>
+  <text x="320" y="215" text-anchor="middle" class="label">Subject</text>
+  <text x="120" y="278" class="small">Faces camera ↓</text>
+
+  <path d="M320 318V530" stroke="#64748b" stroke-width="2" stroke-dasharray="7 6"/>
+  <path d="M320 355 A85 85 0 0 1 259.9 330.1" fill="none" stroke="#b45309" stroke-width="2"/>
+  <text x="268" y="377" fill="#b45309">≈45°</text>
+  <text x="338" y="509" class="small">Camera axis</text>
+  <rect x="293" y="550" width="54" height="34" rx="6" fill="#2563eb"/>
+  <rect x="310" y="532" width="20" height="20" rx="2" fill="#2563eb"/>
+  <text x="320" y="610" text-anchor="middle" class="label">Camera</text>
+  <text x="25" y="640" class="small">White edges = emitting faces. Arrows = aim, not beam width.</text>
+</svg>

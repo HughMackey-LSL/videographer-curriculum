@@ -163,6 +163,7 @@ Enable clean, flattering lighting with a minimal portable kit.
   - Color temperature
   - Contrast
 - Natural light versus artificial light
+- Lighting fixture overview: tungsten / tungsten-halogen, HMI, cinema fluorescent, and LED technologies; panels, COB / point-source heads, Fresnels, PARs, tubes, and pocket lights; stage washes versus gobo projection; color balance, ballasts, modifiers, power, and support
 - Three-point lighting:
   - Key light
   - Fill light

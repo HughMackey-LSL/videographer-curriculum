@@ -251,6 +251,7 @@ img { max-width: 100%; height: auto; }
 
 /* ---- Main wrapper ---- */
 .main-wrapper {
+  min-width: 0;
   margin-left: var(--sidebar-width);
   flex: 1;
   display: flex;
@@ -301,6 +302,8 @@ img { max-width: 100%; height: auto; }
 
 /* ---- Main content ---- */
 .content {
+  min-width: 0;
+  width: 100%;
   flex: 1;
   padding: 40px 48px;
   max-width: 900px;
@@ -1143,3 +1146,79 @@ hr {
   pointer-events: none;
 }
 .toast.show { transform: translateY(0); opacity: 1; }
+
+/* ---- Lesson examples and public resource guides ---- */
+.visual-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 16px; padding: 20px; background: #f8fafc; }
+.visual-card { min-width: 0; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+.content .visual-card h3 { font-size: 1rem; margin: 8px 0; }
+.content .visual-card p { font-size: .9rem; margin: 0; }
+.visual-card svg { width: 100%; display: block; }
+.setup-plan { padding: 20px; background: #f8fafc; overflow-x: auto; }
+.setup-plan svg { display: block; width: 100%; min-width: 460px; max-width: 560px; margin: auto; font: 18px system-ui, sans-serif; fill: #0f172a; }
+.setup-plan-three-point img { width: 100%; min-width: 560px; max-width: 640px; margin: auto; }
+.setup-viewer { margin: 24px 0 28px; }
+.setup-selector { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 20px; }
+.setup-selector button { min-width: 0; padding: 12px; border: 1.5px solid var(--border); border-radius: var(--radius); background: #fff; color: var(--text); font-size: .88rem; font-weight: 500; line-height: 1.4; font-family: inherit; cursor: pointer; }
+.setup-selector button:hover { border-color: var(--primary); }
+.setup-selector button[aria-selected="true"] { background: var(--primary-light); border-color: var(--primary); color: #1d4ed8; font-weight: 700; }
+.setup-selector button:focus-visible, .setup-panel:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+.setup-selector[hidden], .setup-panel[hidden] { display: none; }
+.content .setup-panel > h3 { margin: 0 0 6px; }
+.content .setup-count { font-size: .85rem; font-weight: 600; color: #475569; margin-bottom: 12px; }
+.setup-panel .lesson-visual { margin: 16px 0; }
+@media (max-width: 700px) {
+  .setup-selector { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.intensity-bar { height: 24px; width: var(--amount); min-width: 4px; background: #2563eb; border-radius: 4px; margin: 12px 0; }
+.color-sample { height: 70px; border: 1px solid #94a3b8; border-radius: 6px; }
+.color-sample.daylight { background: #f1f5f9; }
+.color-sample.tungsten { background: #f5b675; }
+.color-sample.mixed { background: linear-gradient(to right, #f1f5f9 40%, #f5b675 70%); }
+.table-scroll { max-width: 100%; overflow-x: auto; margin-bottom: 24px; }
+.table-scroll .def-table { margin-bottom: 0; min-width: 600px; }
+.lesson-resources { margin: 32px 0; padding: 24px; border: 1px solid #bfdbfe; border-radius: var(--radius-lg); background: #f8fafc; }
+.content .lesson-resources h2 { margin: 0 0 12px; }
+.content .resource-intro { font-size: .9rem; color: var(--text-muted); }
+.content .resource-list { list-style: none; margin: 0; padding: 0; }
+.resource-list li { margin: 0 0 12px; padding: 16px; border: 1px solid var(--border); border-radius: 8px; background: #fff; }
+.resource-type { display: block; color: #475569; font-size: .75rem; letter-spacing: .03em; }
+.content .resource-list h3 { margin: 6px 0 8px; font-size: 1rem; }
+.content .resource-list p { font-size: .92rem; margin-bottom: 0; }
+.lesson-resources a, .visual-credit a { text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.content pre { max-width: 100%; overflow-x: auto; padding: 16px; margin: 16px 0 24px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); font-size: .85rem; }
+.practice-task { padding: 16px 0 0; border-top: 1px solid var(--border); }
+.content .practice-task h3 { font-size: 1rem; margin: 0 0 8px; }
+.content .practice-task p { margin: 0; font-size: .95rem; }
+.handle-strip { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 4px; padding: 20px; background: #f8fafc; }
+.handle-strip > div { padding: 16px; background: #dbeafe; border: 1px solid #93c5fd; }
+.handle-strip > div:nth-child(2) { background: #dcfce7; border-color: #86efac; }
+.handle-strip strong, .handle-strip span { display: block; }
+.handle-strip span { margin-top: 8px; font-size: .86rem; }
+.content .workflow-steps { list-style: none; counter-reset: workflow; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 12px; padding: 20px; margin: 0; background: #f8fafc; }
+.workflow-steps li { counter-increment: workflow; margin: 0; padding: 16px; background: #fff; border: 1px solid var(--border); border-radius: 8px; }
+.workflow-steps li::before { content: counter(workflow); display: block; color: #2563eb; font-weight: 700; margin-bottom: 8px; }
+.workflow-steps strong, .workflow-steps span { display: block; }
+.workflow-steps span { font-size: .9rem; margin-top: 8px; }
+.timeline-example { padding: 20px; background: #f8fafc; }
+.timeline-example + .timeline-example { border-top: 1px solid var(--border); }
+.content .timeline-example h3 { margin: 0 0 8px; font-size: 1rem; }
+.content .time-direction { margin: 0 0 12px; font-size: .8rem; color: #475569; text-align: right; }
+.edit-track { display: grid; grid-template-columns: 62px 1fr; align-items: stretch; gap: 8px; margin-top: 8px; font-size: .82rem; }
+.edit-track > strong { padding-top: 10px; }
+.timeline-segments { display: flex; min-width: 0; }
+.timeline-segments span { min-width: 0; padding: 10px 8px; border: 1px solid #fff; font-weight: 500; overflow-wrap: anywhere; }
+.clip-interview { background: #dbeafe; }
+.clip-broll { background: #dcfce7; }
+.clip-dialogue { background: #e0e7ff; }
+.clip-ambient { background: #fef3c7; }
+@media (max-width: 600px) {
+  .lesson-nav .btn { white-space: normal; text-align: center; }
+  .lesson-resources { padding: 16px; }
+  .visual-grid, .setup-plan, .timeline-example { padding: 12px; }
+  .handle-strip { grid-template-columns: 1fr; padding: 12px; }
+  .setup-plan svg { font-size: 20px; }
+  .edit-track { grid-template-columns: 1fr; gap: 3px; }
+  .edit-track > strong { padding-top: 0; }
+}
+
+.quiz-q-text strong { overflow-wrap: anywhere; }

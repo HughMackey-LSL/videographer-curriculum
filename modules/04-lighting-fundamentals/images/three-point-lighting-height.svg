@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 350" role="img" aria-labelledby="title description">
+  <title id="title">Side view: raise the key and aim it down toward the face</title>
+  <desc id="description">A key light on a stand is above the seated subject's eye level. Its white emitting face and arrow point down toward the face at an illustrative angle of about 35 degrees. The camera lens is near eye level. This view shows height only, while the overhead diagram shows the sideways placement.</desc>
+  <defs><marker id="aim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b45309"/></marker></defs>
+  <style>text { font: 18px system-ui, sans-serif; fill: #0f172a; } .small { font-size: 15px; fill: #475569; }</style>
+  <rect width="640" height="350" fill="#f8fafc"/>
+  <text x="25" y="31" font-weight="650">SIDE VIEW — KEY HEIGHT</text>
+  <path d="M150 85V308M125 325 150 308 175 325" fill="none" stroke="#94a3b8" stroke-width="4"/>
+  <path d="M150 85H280" stroke="#94a3b8" stroke-dasharray="5 5" stroke-width="2"/>
+  <path d="M220 85 A70 70 0 0 1 207.3 125.2" fill="none" stroke="#b45309" stroke-width="2"/>
+  <text x="239" y="119">≈30–45°</text>
+  <path d="M150 85 332 212.4" fill="none" stroke="#b45309" stroke-width="4" marker-end="url(#aim)"/>
+  <g transform="translate(150 85) rotate(35)">
+    <rect x="-24" y="-31" width="24" height="62" rx="4" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <path d="M0-29V29" stroke="#fff" stroke-width="8"/>
+    <path d="M4-29V29" stroke="#b45309" stroke-width="2"/>
+  </g>
+  <text x="25" y="154" font-weight="650">Raised key</text>
+  <text x="25" y="178" class="small">Aim down at the face</text>
+  <path d="M98 225H330M390 225H614" stroke="#64748b" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="468" y="212" class="small">Eye level</text>
+  <rect x="43" y="210" width="44" height="30" rx="5" fill="#2563eb"/>
+  <rect x="85" y="217" width="17" height="16" rx="2" fill="#2563eb"/>
+  <text x="32" y="269" class="small">Camera</text>
+  <circle cx="360" cy="225" r="30" fill="#334155"/>
+  <path d="M333 215 326 225 333 232" fill="#334155"/>
+  <path d="M344 251v17q-22 8-25 50h82q-3-42-25-50v-17" fill="#94a3b8"/>
+  <text x="408" y="282" class="small">Seated subject</text>
+  <text x="25" y="343" class="small">Height view only; use the overhead plan for sideways placement.</text>
+</svg>

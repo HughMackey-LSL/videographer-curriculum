@@ -37,7 +37,7 @@
       <div class="objectives-box">
         <h3>Learning Objectives</h3>
         <ul>
-          <li>Construct a file name that communicates date, project, camera roll, and clip number.</li>
+          <li>Use descriptive project and card folder names while preserving original camera filenames.</li>
           <li>Describe a recommended folder hierarchy for a video project handoff.</li>
           <li>Explain why the RAW folder should never be modified after delivery.</li>
           <li>Identify what belongs in a post-shoot notes file.</li>
@@ -52,27 +52,27 @@
       <h2>The Problem with Camera-Generated File Names</h2>
       <p>Cameras generate file names automatically. A Sony camera might produce <code>C0001.MP4</code>, <code>C0002.MP4</code>. A Canon might produce <code>MVI_3847.MOV</code>. A DJI drone might produce <code>DJI_0042.MP4</code>. These names communicate almost nothing about the content. They convey no information about the project, the shoot date, which camera the clip came from, or what the clip contains.</p>
 
-      <p>When an editor receives a folder containing hundreds of clips named by camera default, they have no way to understand the material without opening each clip individually. In a multi-camera shoot where two cameras both used default naming and their clip numbers overlap, the editor cannot tell which clips came from which camera without checking the metadata of each file.</p>
+      <p>Camera filenames alone do not describe the content. Descriptive parent folders and shoot notes give the editor context without changing the originals. Separate camera and card folders also prevent same-named clips from being confused or overwritten.</p>
 
-      <p>Renaming files before delivery is a professional responsibility. It takes additional time but eliminates confusion for everyone downstream — including yourself when you look at the project six months later.</p>
+      <p>Preserve original camera filenames and complete card folder structures by default. Some formats depend on companion metadata or multiple files for a single clip. Give each card copy a unique, descriptive parent folder; use clip labels or metadata inside the editing project for readable names. Rename source files only under an agreed workflow that preserves an untouched backup and a mapping to the original paths.</p>
 
-      <h2>A Good File Naming Convention</h2>
-      <p>A well-structured file name answers these questions at a glance: When was this shot? What project is it for? Which camera recorded it? What is the clip number in sequence?</p>
+      <h2>A Good Folder and Clip Naming Convention</h2>
+      <p>A descriptive parent folder identifies the shoot, project, camera, and card. Keep the camera-generated filename inside it. A complete path identifies a clip even when another card also has a C0001.MP4.</p>
 
-      <p>A practical convention that covers all of these:</p>
-      <pre><code>YYYYMMDD_ProjectName_CamLetter_RollNumber_ClipNumber.ext</code></pre>
+      <p>A practical parent-folder convention:</p>
+      <pre><code>YYYYMMDD_ProjectName_CamLetter_RollNumber/original_card_contents</code></pre>
 
       <p>For example:</p>
-      <pre><code>20240315_StaffInterview_A_R01_0023.MP4
-20240315_StaffInterview_B_R01_0008.MP4</code></pre>
+      <pre><code>20261012_StaffInterview_A_R01/PRIVATE/.../C0023.MP4
+20261012_StaffInterview_B_R01/PRIVATE/.../C0008.MP4</code></pre>
 
       <p>Breaking this down:</p>
       <ul>
-        <li><strong>20240315</strong> — The shoot date in YYYY-MM-DD format. This format sorts chronologically when files are sorted alphabetically, which is a significant practical advantage.</li>
+        <li><strong>20261012</strong> — The shoot date in YYYYMMDD format. This format sorts chronologically when files are sorted alphabetically, which is a significant practical advantage.</li>
         <li><strong>StaffInterview</strong> — The project name or short descriptor. Keep it concise and avoid spaces (use underscores or CamelCase instead, as spaces cause problems in some software and command-line environments).</li>
         <li><strong>A</strong> — Camera identifier. Camera A is the primary camera; Camera B is the secondary. This distinguishes clips from different cameras when clip numbers overlap.</li>
         <li><strong>R01</strong> — Roll number. Cameras reset their clip counter when a card is formatted. A roll number distinguishes Card 1 from Card 2 from Card 3 within a project.</li>
-        <li><strong>0023</strong> — The clip number from the camera, zero-padded to four digits so files sort correctly.</li>
+        <li><strong>C0023.MP4</strong> — The original camera filename. The intervening card folders vary by camera; copy them in full rather than creating the abbreviated path shown here.</li>
       </ul>
 
       <div class="callout callout-tip">
@@ -87,21 +87,27 @@
   YYYYMMDD/
     RAW/
       Camera_A/
+        20261012_StaffInterview_A_R01/
+          [complete card contents]
       Camera_B/
+        20261012_StaffInterview_B_R01/
+          [complete card contents]
       Audio/
+    Project/
+    Proxies/
     Exports/
     Notes/</code></pre>
 
       <p>Breaking this down by purpose:</p>
 
       <h3>RAW/</h3>
-      <p>The RAW folder contains the original camera files and audio recordings, exactly as they came off the cards. This folder is the archive. It should never be modified, rearranged, or have files deleted from it once the media has been verified and backed up. Editors work from copies, not from the RAW folder directly. The RAW folder is the source of truth, and its integrity is paramount.</p>
+      <p>The RAW folder contains the original camera files, their complete card structures, and original audio recordings, exactly as they came off the cards. “RAW” here means an originals folder, not necessarily a raw recording format. This folder is the archive. It should never be modified, rearranged, or have files deleted from it once the media has been verified and backed up. Editors may reference verified originals without modifying them or use linked proxies. Project files and exports belong in separate folders. The RAW folder is the source of truth, and its integrity is paramount.</p>
 
       <h3>Camera_A/ and Camera_B/</h3>
       <p>Separate subfolders for each camera's media prevent clip number collisions and make it immediately clear which clips came from which camera. If Camera A and Camera B both have a clip numbered 0042, they coexist without conflict in their respective subfolders.</p>
 
       <h3>Audio/</h3>
-      <p>Audio recorder files belong here: WAV files from a field recorder, boom operator recordings, or lavelier backup recordings. Keeping them separate from video files but within the RAW hierarchy makes them easy to find during the sync pass.</p>
+      <p>Audio recorder files belong here: WAV files from a field recorder, boom operator recordings, or lavalier backup recordings. Keeping them separate from video files but within the RAW hierarchy makes them easy to find during the sync pass. Project/ holds editing project files; Proxies/ holds optional lightweight editing copies, never the sole archive.</p>
 
       <h3>Exports/</h3>
       <p>Rendered output files go here: rough cut exports for client review, final delivery files, compressed social media versions. Keeping exports separate from raw media prevents any possibility of confusing a re-encoded file with an original.</p>
@@ -132,10 +138,10 @@
 
       <div class="knowledge-check">
         <div class="kc-header">📝 Knowledge Check</div>
-        <p class="kc-prompt">A shooter delivers footage from a two-camera shoot. Both cameras used default naming and produced clips numbered 0001 through 0045. What problem will the editor encounter?</p>
+        <p class="kc-prompt">A shooter delivers footage from a two-camera shoot. Both cameras used default naming and produced clips numbered 0001 through 0045. If these are pooled into one unlabeled folder, what problem can occur?</p>
         <div class="kc-options">
           <button class="kc-option" data-correct="false">The editing software will refuse to import files with duplicate names.</button>
-          <button class="kc-option" data-correct="true">The editor cannot tell which clips came from which camera without opening each file individually to check its metadata.</button>
+          <button class="kc-option" data-correct="true">If the files are pooled into one unlabeled folder, camera identity becomes unclear and a copy may overwrite a same-named file. Separate, labeled camera/card folders avoid this.</button>
           <button class="kc-option" data-correct="false">The clips from both cameras will automatically be combined into a single sequence by the editing software.</button>
           <button class="kc-option" data-correct="false">Default file names cause frame rate conflicts during import.</button>
         </div>
@@ -143,13 +149,25 @@
         <button class="kc-reset">Try again</button>
       </div>
 
+      <h2>Example Handoff Note</h2>
+      <pre><code>Project: Faculty workshop profile — 12 October 2026
+Delivery goal: 60-second recap, landscape + vertical version
+Camera A: 25 fps; fixed daylight WB; standard profile
+Audio: recorder WAV; lav on channel 1; camera audio for sync
+Preferred answer: RAW/Camera_A/20261012_StaffInterview_A_R01/
+  [camera subfolders]/C0023.MP4 — 00:18–00:42 clip time
+Issue: chair noise at 00:27; check recorder track
+B-roll: equipment setup + participant activity recorded
+Gap: no exterior establishing shot; pickup still needed
+Verification: primary + separate backup checksums matched</code></pre>
+      <p>This is a fictional example. Use the actual recording settings, exact relative paths, and clip-relative times or source timecode; state which time reference you used.</p>
       <h2>Delivering to Shared Storage</h2>
       <p>On larger productions, media may be delivered to a shared network drive or server rather than a personal drive. When this is the case, several additional checks apply:</p>
 
       <ul>
         <li><strong>Confirm the destination</strong> — Get the exact folder path in writing from the producer or post coordinator. Do not guess or approximate.</li>
         <li><strong>Confirm the naming convention</strong> — Shared storage environments often have established naming standards. Match them exactly, even if they differ from your personal preference.</li>
-        <li><strong>Verify the transfer completed</strong> — Do not assume a file copy to a network drive succeeded. Compare file counts and total sizes between source and destination.</li>
+        <li><strong>Verify the transfer completed</strong> — Do not assume a file copy to a network drive succeeded. Compare file counts and sizes, and use checksum verification when available. Counts and sizes alone do not prove that every byte transferred correctly; spot-check playback too.</li>
         <li><strong>Confirm backup exists</strong> — On shared storage, ask who is responsible for backup and confirm it has been performed before formatting cards.</li>
       </ul>
 
@@ -169,10 +187,17 @@
         <button class="kc-reset">Try again</button>
       </div>
 
+      <section class="lesson-resources" aria-label="Public resources and practice">
+        <h2>See It in Practice</h2>
+        <p class="resource-intro">Use these public examples alongside the lesson, then try the short exercise.</p>
+        <ul class="resource-list"><li><span class="resource-type">Import demonstration · public tutorial</span><h3><a href="https://www.adobe.com/learn/premiere-pro/web/create-project-import-media">Adobe — create a project and import media</a></h3><p>Watch how source media is brought into a project. Keep card copies intact; descriptive project labels can help you organize the edit.</p></li></ul>
+        <div class="practice-task"><h3>Try This</h3><p>Create a mock handoff with two card folders that both contain a file named C0001.MP4. Add a notes entry using the complete relative path so the editor can identify the correct take without renaming an original.</p></div>
+      </section>
+
       <div class="key-takeaways">
         <h3>Key Takeaways</h3>
         <ul>
-          <li>Camera-generated file names communicate nothing useful; rename files before delivery using a convention that includes date, project, camera, roll, and clip number.</li>
+          <li>Preserve original filenames and full card structures; identify the shoot, camera, and roll in unique parent folders and notes.</li>
           <li>A logical folder hierarchy (RAW → Camera_A, Camera_B, Audio; Exports; Notes) keeps raw media, working files, and documentation cleanly separated.</li>
           <li>The RAW folder is the archive — never modify, rearrange, or delete from it after delivery.</li>
           <li>A notes file gives the editor context they cannot get from the footage alone: preferred takes, technical issues, pickup needs, and location context.</li>

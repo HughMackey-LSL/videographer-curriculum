@@ -53,11 +53,20 @@
 
       <div class="callout callout-tip">
         <div class="callout-title">Tip</div>
-        <p>To make a hard source softer, move it closer or add diffusion material in front of it. Both strategies increase the effective size of the source relative to the subject. Moving a light farther away always makes it harder, even if the surface area seems the same.</p>
+        <p>To make a source appear larger, move it closer or illuminate a larger diffusion or bounce surface. A small diffusion cap may scatter light without increasing the emitting area very much. If the same luminous surface moves farther away, it appears smaller and usually creates sharper shadow edges.</p>
       </div>
 
+      <figure class="lesson-visual"><div class="visual-grid"><div class="visual-card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 170" role="img" aria-label="Small source casts a shadow with a distinct edge"><circle cx="38" cy="80" r="9" fill="#f59e0b"/><path d="M49 76 175 45M49 84 175 115" stroke="#d97706" stroke-width="3"/><circle cx="192" cy="80" r="26" fill="#475569"/><path d="M224 55v50" stroke="#0f172a" stroke-width="13"/></svg><h3>Small apparent source</h3><p>Sharper shadow edges. A small bare fixture or direct sun behaves this way.</p></div><div class="visual-card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 170" role="img" aria-label="Large source reaches the subject from more angles and creates a gradual shadow edge"><rect x="23" y="22" width="26" height="115" rx="5" fill="#fde68a"/><path d="M50 27 175 115M50 132 175 45" stroke="#d97706" stroke-width="3"/><circle cx="192" cy="80" r="26" fill="#475569"/><path d="M224 55v50" stroke="#64748b" stroke-width="22" opacity=".5"/></svg><h3>Large apparent source</h3><p>More gradual shadow edges. A nearby broad diffusion face or bounce surface behaves this way.</p></div></div><figcaption>Judge softness by the shadow edge. Brightness and softness are separate decisions.<span class="visual-credit">Original course schematic; not a photograph or a scale drawing.</span></figcaption></figure>
       <h2>Direction</h2>
       <p>Where a light source is positioned relative to the subject and camera shapes the three-dimensional appearance of the face and body. Lighting direction is described in terms of horizontal angle from the camera axis and vertical angle above the subject's eye line.</p>
+
+      <figure class="lesson-visual">
+        <img src="images/lighting-direction-render.png" width="1046" height="1061" loading="lazy" alt="Four 3D renders of the same face: side lighting leaves much of the face in shadow; three-quarter lighting models the cheeks and nose; frontal lighting illuminates the face evenly; top lighting creates deep shadows around the eyes and beneath the nose.">
+        <figcaption>
+          <strong>Compare the direction, then the shadows.</strong> Side lighting creates strong contrast; three-quarter lighting reveals facial shape; frontal lighting reduces visible shadows; light from above deepens the eye-socket and nose shadows. Notice how the same face changes as the source moves.
+          <span class="visual-credit">Lighting render by the course author. “Girl bust” model by DanP38, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; original model attribution retained in the image. <a href="images/lighting-direction-render.png">View full-size render</a>.</span>
+        </figcaption>
+      </figure>
 
       <table class="def-table">
         <thead><tr><th>Direction</th><th>Effect</th></tr></thead>
@@ -73,7 +82,7 @@
       <p>Vertical angle matters as much as horizontal angle. Too high and you create deep eye socket shadows. Too low and the light is unflattering and draws attention to the chin. The sweet spot for a key light is roughly 30 to 45 degrees above eye level, angled to one side.</p>
 
       <h2>Intensity and Distance: The Inverse Square Law</h2>
-      <p>Light intensity falls off with distance. The formal relationship is the inverse square law: double the distance between the light and subject, and the intensity at the subject drops to one quarter, not one half. This has two practical implications.</p>
+      <p>Light intensity falls off with distance. The formal relationship is the inverse square law: for an ideal point source, doubling the distance between light and subject reduces the intensity to one quarter. This is a useful approximation for many fixtures; large nearby soft sources and focusing optics can behave differently. This has two practical implications.</p>
       <p>First, moving a light closer dramatically increases its power at the subject — useful when you need more output from a small LED. Second, the falloff between your subject and the background is also governed by this law. A light placed close to the subject will fall off sharply, leaving the background much darker. A light placed far away falls off more gradually, spilling more evenly onto both subject and background. Use this to your advantage when you want to control background brightness independently of subject brightness.</p>
 
       <div class="callout callout-note">
@@ -81,6 +90,7 @@
         <p>In practical terms: if your subject looks underexposed and you double the light's power, you gain one stop of exposure. If instead you halve the distance between light and subject, you gain two stops. Distance is often more powerful than power output when working with small LEDs.</p>
       </div>
 
+      <figure class="lesson-visual"><div class="visual-grid"><div class="visual-card"><h3>1 m → full intensity</h3><div class="intensity-bar" style="--amount:100%"></div><p>Reference exposure.</p></div><div class="visual-card"><h3>2 m → ¼ intensity</h3><div class="intensity-bar" style="--amount:25%"></div><p>About two stops less.</p></div><div class="visual-card"><h3>4 m → ¹⁄₁₆ intensity</h3><div class="intensity-bar" style="--amount:6.25%"></div><p>About four stops less than at 1 m.</p></div></div><figcaption>A point-source model at fixed output. Large nearby soft sources and focused optics can depart from this approximation; check the actual image or meter reading.<span class="visual-credit">Original course schematic; not a photograph or a scale drawing.</span></figcaption></figure>
       <h2>Color Temperature</h2>
       <p>All light has a color. Human vision adapts to color temperature automatically, but cameras must be told (via white balance) what "white" looks like. Color temperature is measured in Kelvin (K). Lower numbers are warmer (more orange/red); higher numbers are cooler (more blue).</p>
 
@@ -90,12 +100,12 @@
           <tr><td>Candlelight</td><td>~1800K</td></tr>
           <tr><td>Tungsten / Incandescent bulb</td><td>~3200K</td></tr>
           <tr><td>Warm white LED</td><td>~3500K</td></tr>
-          <tr><td>Overcast daylight / Flash</td><td>~5600K</td></tr>
-          <tr><td>Clear blue sky</td><td>6500–8000K</td></tr>
+          <tr><td>Nominal daylight / daylight-balanced flash</td><td>~5600K</td></tr>
+          <tr><td>Overcast sky / open shade</td><td>~6500K and higher; varies with conditions</td></tr>
         </tbody>
       </table>
 
-      <p>When multiple light sources of different color temperatures appear in the same frame, you have a mixed color temperature problem. Set the white balance for one source and the other looks wrong. This is covered in depth in Lesson 5, but understanding that every source has a color is the first step.</p>
+      <p>When multiple light sources of different color temperatures appear in the same frame, you have a mixed color temperature problem. Set the white balance for one source and the other looks wrong. This is covered in depth in <a href="05-windows-color-temp.html">Windows and Color Temperature</a>, but understanding that every source has a color is the first step.</p>
       <p>Bicolor LED panels let you dial the color temperature between approximately 3200K and 5600K, making them extremely versatile for matching any dominant source in the room. This is one reason bicolor LEDs have become the standard tool for portable field lighting.</p>
 
       <h2>Contrast Ratio</h2>
@@ -116,7 +126,7 @@
       </div>
 
       <h2>How the Five Qualities Interact</h2>
-      <p>Hardness, direction, intensity, color temperature, and contrast ratio are not independent choices — they interact. Moving a light closer makes it softer (hardness) and brighter (intensity), which in turn affects your contrast ratio if you don't compensate. Changing direction changes the contrast on the face. Adding diffusion changes the hardness and reduces the intensity, requiring a compensation in distance or power. Choosing a bicolor LED affects color temperature but also limits maximum power output compared to a fixed-temperature fixture.</p>
+      <p>Hardness, direction, intensity, color temperature, and contrast ratio are not independent choices — they interact. Moving a light closer makes it softer (hardness) and brighter (intensity), which in turn affects your contrast ratio if you don't compensate. Changing direction changes the contrast on the face. Adding diffusion changes the hardness and reduces the intensity, requiring a compensation in distance or power. A bi-color fixture's output can vary with the selected color temperature; check that specific model's photometrics rather than assuming a universal power penalty.</p>
       <p>Skilled lighting operators think about all five qualities simultaneously and understand how adjusting one will ripple through the others. As you practice, you will develop intuition for these relationships. The goal in field production is to make quick, confident decisions that produce clean, consistent images regardless of what the location throws at you.</p>
 
       <div class="knowledge-check">
@@ -131,6 +141,13 @@
         <div class="kc-feedback"></div>
         <button class="kc-reset">Try again</button>
       </div>
+
+      <section class="lesson-resources" aria-label="Public resources and practice">
+        <h2>See It in Practice</h2>
+        <p class="resource-intro">Use these public examples alongside the lesson, then try the short exercise.</p>
+        <ul class="resource-list"><li><span class="resource-type">Photographed comparison · PDF</span><h3><a href="https://www.arri.com/resource/blob/83996/409091c612f371b0c68b41d9dcb636db/arri-lighting-handbook-english-data.pdf#page=6">Bill Holshevnikoff / ARRI — hard and soft light, pp. 6–8</a></h3><p>Compare the photographed shadow edges. Look for the source or modifier responsible for each change.</p></li></ul>
+        <div class="practice-task"><h3>Try This</h3><p>Keep camera exposure and white balance fixed. Record a hand or object with a small source, then a larger bounce or diffusion source. Match brightness and compare only the shadow edges.</p></div>
+      </section>
 
       <div class="key-takeaways">
         <h3>Key Takeaways</h3>

@@ -30,7 +30,7 @@
     <main class="content">
 
       <div class="lesson-header">
-        <div class="module-tag">Module 4 · Lesson 4</div>
+        <div class="module-tag">Module 4 · Lesson 5</div>
         <h1>One-Light and Two-Light Setups</h1>
         <div class="lesson-meta"><span>~9 min read</span><span>4 objectives</span></div>
       </div>
@@ -52,7 +52,7 @@
       <h2>The One-Light Interview Setup</h2>
       <p>A single LED panel in a softbox, positioned as the key light, combined with a reflector on the shadow side, covers the key and fill functions of three-point lighting. The back light is missing, but in many documentary and institutional contexts, this is acceptable — particularly when the background is naturally lighter than the subject or when the aesthetic is deliberately naturalistic.</p>
       <p>Position the LED softbox at 30 to 45 degrees to the side of camera, 30 to 45 degrees above eye level. This is the same key position as in the three-point system. Set the subject-to-light distance to achieve a correct exposure at a comfortable aperture and ISO. Place a large white reflector — a 42-inch or larger 5-in-1 reflector — on the shadow side of the subject, angled to catch the key light and bounce it back toward the face. The white surface of the reflector creates a fill that is inherently softer and always naturally proportioned to the key. As the key gets brighter, so does the reflected fill.</p>
-      <p>Control the contrast ratio by moving the reflector closer (more fill, lower contrast) or farther away (less fill, higher contrast). Unlike a powered fill light, the reflector cannot accidentally overpower the key or create conflicting shadows. This simplicity is one reason experienced operators often prefer the reflector fill approach even when they have a second powered light available.</p>
+      <p>Control the contrast ratio by moving the reflector closer (more fill, lower contrast) or farther away (less fill, higher contrast). A large white reflector often gives gentle fill, but its position and illuminated area still matter. Check for unwanted shadows or reflections rather than assuming reflected light cannot create them. This simplicity is one reason experienced operators often prefer the reflector fill approach even when they have a second powered light available.</p>
 
       <div class="callout callout-tip">
         <div class="callout-title">Tip</div>
@@ -64,17 +64,28 @@
       <p>The one-light approach is well-suited for documentary interviews, news-style footage, informational video, and any situation where the look should feel natural and unproduced. It is less appropriate for highly polished corporate productions where viewers may have expectations set by studio-quality lighting.</p>
 
       <h2>Two-Light Setup Options</h2>
-      <p>Adding a second powered light opens up several configurations. The right choice depends on what the location provides and what you are trying to achieve.</p>
+      <p>Choose a configuration to see where each source sits and what it contributes. The first example uses one powered light with a reflector and available window light; the other three use two powered lights. Set the camera and subject first, then choose the arrangement that solves your lighting problem.</p>
 
-      <table class="def-table">
-        <thead><tr><th>Configuration</th><th>When to Use</th></tr></thead>
-        <tbody>
-          <tr><td>LED key + reflector fill + window back</td><td>Location has a window behind the subject. The window provides free separation without an additional stand.</td></tr>
-          <tr><td>LED key + window fill + LED back</td><td>Large window opposite the key provides natural fill. Add a small LED for separation.</td></tr>
-          <tr><td>Two LEDs: key and fill</td><td>No useful window. Second LED set to 50% or less of key output. Use different diffusion levels to maintain key dominance.</td></tr>
-          <tr><td>LED key + small LED hair light</td><td>Full control preferred, no useful windows. Small accent LED on a boom or high stand behind subject.</td></tr>
-        </tbody>
-      </table>
+      <div class="setup-viewer" data-setup-viewer id="two-light-viewer">
+        <div class="setup-selector" aria-label="Choose a lighting configuration" hidden><button type="button" id="setup-tab-window-back" aria-controls="setup-panel-window-back" aria-selected="true" tabindex="0">Window back + reflector</button><button type="button" id="setup-tab-window-fill" aria-controls="setup-panel-window-fill" aria-selected="false" tabindex="-1">Window fill + LED back</button><button type="button" id="setup-tab-key-fill" aria-controls="setup-panel-key-fill" aria-selected="false" tabindex="-1">Two LEDs: key + fill</button><button type="button" id="setup-tab-key-hair" aria-controls="setup-panel-key-hair" aria-selected="false" tabindex="-1">Two LEDs: key + hair</button></div>
+        <section class="setup-panel" id="setup-panel-window-back" tabindex="0">
+          <h3>Key + reflector + window backlight</h3><p class="setup-count">One powered fixture + window light</p><p>Use this when a window behind the subject provides a useful edge or separation. The LED lights the face; a white reflector redirects some key light into the shadows.</p>
+          <figure class="lesson-visual"><div class="setup-plan setup-plan-three-point" tabindex="0" role="region" aria-label="Key + reflector + window backlight overhead diagram; scroll horizontally on small screens"><img src="images/setup-window-back.svg" width="640" height="560" loading="lazy" alt="One LED key in front-left, a white reflector in front-right with incoming key spill and reflected fill, and a rear window supplying separation."></div><figcaption><strong>Adjust and check:</strong> Set the key first, then angle the reflector to catch it. Check that the window is not clipping distractingly or shining into the lens; reposition the subject or control the window if needed.</figcaption></figure>
+        </section>
+        <section class="setup-panel" id="setup-panel-window-fill" tabindex="0">
+          <h3>LED key + window fill + LED back</h3><p class="setup-count">Two powered fixtures + window light</p><p>Use this when a large window on the opposite front side can lift the face shadows. The second LED goes behind the subject to create separation.</p>
+          <figure class="lesson-visual"><div class="setup-plan setup-plan-three-point" tabindex="0" role="region" aria-label="LED key + window fill + LED back overhead diagram; scroll horizontally on small screens"><img src="images/setup-window-fill.svg" width="640" height="560" loading="lazy" alt="One LED key in front-left, a large window to the front-right supplying fill, and a second LED behind-right aimed at the head and shoulders."></div><figcaption><strong>Adjust and check:</strong> Match the LEDs to the useful window light. Adjust the subject or window control if the fill becomes too strong, and monitor changes in daylight.</figcaption></figure>
+        </section>
+        <section class="setup-panel" id="setup-panel-key-fill" tabindex="0">
+          <h3>Two LEDs: key + fill</h3><p class="setup-count">Two powered fixtures</p><p>Use this when there is no useful window and the shadow side needs more light. Both fixtures are in front: the key gives direction, and the softer, lower-output fill lifts the shadows.</p>
+          <figure class="lesson-visual"><div class="setup-plan setup-plan-three-point" tabindex="0" role="region" aria-label="Two LEDs: key + fill overhead diagram; scroll horizontally on small screens"><img src="images/setup-key-fill.svg" width="640" height="560" loading="lazy" alt="Two LEDs in front of the subject: key at front-left around 45 degrees from camera, lower-output fill at front-right closer to the camera axis."></div><figcaption><strong>Adjust and check:</strong> Adjust fill by the face on camera, rather than setting an automatic percentage of the key’s power. Fixture output, distance, and diffusion all affect the result.</figcaption></figure>
+        </section>
+        <section class="setup-panel" id="setup-panel-key-hair" tabindex="0">
+          <h3>LED key + small LED hair light</h3><p class="setup-count">Two powered fixtures</p><p>Use this when the face already has acceptable shadow detail but the head or shoulders merge with the background. The second light goes behind and above the subject, not onto the background wall.</p>
+          <figure class="lesson-visual"><div class="setup-plan setup-plan-three-point" tabindex="0" role="region" aria-label="LED key + small LED hair light overhead diagram; scroll horizontally on small screens"><img src="images/setup-key-hair.svg" width="640" height="560" loading="lazy" alt="LED key in front-left and a small LED behind-right for hair and shoulder separation. No separate fill source is shown."></div><figcaption><strong>Adjust and check:</strong> Keep the hair light out of frame and off the lens; avoid a clipped rim. No separate fill is shown here. Add a white bounce card only if the face shadows need lifting.</figcaption></figure>
+        </section>
+        <p class="visual-credit">Original course overhead plans, not to scale. Arrows show the direction of light, not beam width; diagram colors identify roles, not actual light color. On small screens, scroll the diagram sideways. Powered fixtures have white emitting faces; the white reflector redirects incoming light. Key and back-light height follow the <a href="03-three-point-lighting.html#three-point-diagram">three-point placement and height diagrams</a>.</p>
+      </div>
 
       <p>In each configuration, the key light is the anchor. Set it first, confirm the exposure and shadow quality, and then add the second element. The second light should enhance the setup without fighting the key or creating confusion about where the light is coming from.</p>
 
@@ -117,11 +128,18 @@
         <button class="kc-reset">Try again</button>
       </div>
 
+      <section class="lesson-resources" aria-label="Public resources and practice">
+        <h2>See It in Practice</h2>
+        <p class="resource-intro">Use these public examples alongside the lesson, then try the short exercise.</p>
+        <ul class="resource-list"><li><span class="resource-type">Location examples · PDF</span><h3><a href="https://www.arri.com/resource/blob/83996/409091c612f371b0c68b41d9dcb636db/arri-lighting-handbook-english-data.pdf#page=27">ARRI Lighting Handbook — two-light interview, pp. 27–28</a></h3><p>Study the two-light interview and placement diagram. Decide which source you would retain with only one powered fixture.</p></li></ul>
+        <div class="practice-task"><h3>Try This</h3><p>Use one soft key and a reflector. Record once with the reflector close, once farther away, and once removed. Choose the contrast you would use for a straightforward interview.</p></div>
+      </section>
+
       <div class="key-takeaways">
         <h3>Key Takeaways</h3>
         <ul>
           <li>A one-light setup with a reflector fill is the practical standard for most field interview work and can be set up in under three minutes.</li>
-          <li>The reflector provides fill that is inherently proportional to the key and cannot create conflicting shadows.</li>
+          <li>A white reflector redirects key light into the shadows; adjust its position and check the result on camera.</li>
           <li>Two-light configurations should use the location's available features — windows, walls — as third-light substitutes where possible.</li>
           <li>Always identify camera position and background before setting up any lights.</li>
           <li>Over-lighting creates multiple overlapping shadows and color inconsistency — add lights only when solving a specific, identified problem.</li>

@@ -63,6 +63,7 @@ const COURSE = {
       lessons: [
         { slug: '01-qualities-of-light', title: 'Qualities of Light' },
         { slug: '02-natural-vs-artificial', title: 'Natural Versus Artificial Light' },
+        { slug: '02a-lighting-fixture-overview', title: 'Lighting Fixture Overview' },
         { slug: '03-three-point-lighting', title: 'Three-Point Lighting' },
         { slug: '04-one-two-light-setups', title: 'One-Light and Two-Light Setups' },
         { slug: '05-windows-color-temp', title: 'Windows and Color Temperature' },
@@ -424,6 +425,51 @@ function buildLessonNav() {
   }
 }
 
+// ---- Selectable lighting plans ----
+
+function initSetupViewers() {
+  document.querySelectorAll('[data-setup-viewer]').forEach(viewer => {
+    const selector = viewer.querySelector('.setup-selector');
+    if (!selector) return;
+    const tabs = Array.from(selector.querySelectorAll('button[aria-controls]'));
+    const panels = tabs.map(tab => viewer.querySelector('#' + tab.getAttribute('aria-controls')));
+    if (!tabs.length || panels.some(panel => !panel)) return;
+
+    selector.setAttribute('role', 'tablist');
+    tabs.forEach((tab, index) => {
+      tab.setAttribute('role', 'tab');
+      panels[index].setAttribute('role', 'tabpanel');
+      panels[index].setAttribute('aria-labelledby', tab.id);
+    });
+
+    function select(index, moveFocus = false) {
+      tabs.forEach((tab, i) => {
+        tab.setAttribute('aria-selected', String(i === index));
+        tab.tabIndex = i === index ? 0 : -1;
+        panels[i].hidden = i !== index;
+      });
+      if (moveFocus) tabs[index].focus();
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => select(index));
+      tab.addEventListener('keydown', event => {
+        let next;
+        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = tabs.length - 1;
+        else return;
+        event.preventDefault();
+        select(next, true);
+      });
+    });
+
+    select(0);
+    selector.hidden = false;
+  });
+}
+
 // ---- Knowledge Check Quizzes ----
 
 function initKnowledgeChecks() {
@@ -705,6 +751,7 @@ document.addEventListener('DOMContentLoaded', () => {
   buildProgressBar();
   buildBreadcrumb();
   buildLessonNav();
+  initSetupViewers();
   initKnowledgeChecks();
   initModuleQuiz();
   initDashboard();
